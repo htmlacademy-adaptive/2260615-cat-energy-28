@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Илья Пушкарский](https://up.htmlacademy.ru/adaptive/28/user/2260615).
-* Наставник: [Евгений Петров] (https://htmlacademy.ru/profile/id617077). 
+* Наставник: [Евгений Петров](https://htmlacademy.ru/profile/id617077). 
  
 ---
 
