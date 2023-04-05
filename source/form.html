@@ -14,7 +14,7 @@
         <img class="logo__link-name" src="/source/img/logo.svg" width="101" height="18" alt="Логотип">
       </a>
     </div>
-    <nav class="main-nav">
+    <nav class="main-header__main-nav main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">
           Открыть меню
@@ -49,45 +49,45 @@
         Заполните анкету, и мы подберем программу питания для вашего кота
       </p>
       <form class="form-selection" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form-selection__main">
+        <fieldset class="form-selection__main-form main-form">
           <legend class="visually-hidden">
             Основные данные:
           </legend>
-          <label class="form-selection__main-name">Имя:*
-            <input class="form-selection__main-value" type="text" name="name" value="Барсик" required>
+          <label class="main-form__name">Имя:*
+            <input class="main-form__value" type="text" name="name" value="Барсик" required>
           </label>
-          <label class="form-selection__main-name">Вес(кг):*
-            <input class="form-selection__main-value" type="text" name="number" value="7" required>
+          <label class="main-form__name">Вес(кг):*
+            <input class="main-form__value" type="text" name="number" value="7" required>
           </label>
-          <label class="form-selection__main-name">Возраст(лет):*
-            <input class="form-selection__main-value" name="age" type="number" value="7">
+          <label class="main-form__name">Возраст(лет):*
+            <input class="main-form__value" name="age" type="number" value="7">
           </label>
         </fieldset>
         <fieldset class="form-selection__target target">
           <legend class="visually-hidden">
             Цель программы
           </legend>
-          <ul class="target-list">
-            <li class="target-item">
-              <label class="target-item__control control">
-                <input class="control-input" type="radio" name="target" value="weight-loss" checked>
-                <span class="control-name">
+          <ul class="target__list">
+            <li class="target__item">
+              <label class="target__item-box">
+                <input class="target__item-text" type="radio" name="target" value="weight-loss" checked>
+                <span class="target__item-name">
                   Похудение
                 </span>
               </label>
             </li>
-            <li class="target-item">
-              <label class="target-item__control control">
-                <input class="control-input" type="radio" name="target" value="weight-gain">
-                <span class="control-name">
+            <li class="target__item">
+              <label class="target__item-box">
+                <input class="target__item-text" type="radio" name="target" value="weight-gain">
+                <span class="target__item-name">
                   Набор массы
                 </span>
               </label>
             </li>
-            <li class="target-item">
-              <label class="target-item__control control">
-                <input class="control-input" type="radio" name="target" value="advice">
-                <span class="control-name">
+            <li class="target__item">
+              <label class="target__item-box">
+                <input class="target__item-text" type="radio" name="target" value="advice">
+                <span class="target__item-name">
                   Не знаю (нужен ваш совет)
                 </span>
               </label>
@@ -98,14 +98,14 @@
           <legend class="contacts__title">
             Контактные данные (владельца кота)
           </legend>
-          <div class="contacts__box form-box">
-            <label class="form-box__name">E-mail:*
-              <input class="form-box__value" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+          <div class="contacts__box">
+            <label class="contacts__box-name">E-mail:*
+              <input class="contacts__box-value" type="email" name="email" placeholder="kuklachev@gmail.com" required>
             </label>
           </div>
-          <div class="contacts__box form-box">
-            <label class="form-box__name">Телефон:*
-              <input class="form-box__value" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+          <div class="contacts__box">
+            <label class="contacts__box-name">Телефон:*
+              <input class="contacts__box-value" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
             </label>
           </div>
         </fieldset>
@@ -172,6 +172,7 @@
         <img src="/source/img/map_cat.png" width="57" height="53" alt="Кэт энерджи">
       </div>
     </section>
+
     <section class="page-footer__container">
       <div class="page-footer__logo logo">
         <a class="logo__link" href="https://htmlacademy.ru/">
