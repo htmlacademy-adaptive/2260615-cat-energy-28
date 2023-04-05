@@ -14,7 +14,7 @@
         <img class="logo__link-name" src="/source/img/logo.svg" width="101" height="18" alt="Логотип">
       </a>
     </div>
-    <nav class="main-nav">
+    <nav class="main-header__main-nav main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">
           Открыть меню
@@ -44,8 +44,8 @@
       <h1 class="catalog-container__title">
         Каталог продукции
       </h1>
-      <ul class="catalog-container-list">
-        <li class="catalog-container-item card">
+      <ul class="catalog-container__list">
+        <li class="catalog-container__item card">
           <img class="card__photo" src="/source/img/catalog_chicken.png" width="68" height="86" alt="Курица 500 грамм">
           <div class="card__information">
             <h2 class="card__name">
@@ -80,13 +80,14 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container-item card">
-          <img class="card__photo" src="/source/img/catalog_chicken.png" width="84" height="100" alt="Курица 1000 грамм">
+        <li class="catalog-container__item card">
+          <img class="card__photo" src="/source/img/catalog_chicken.png" width="84" height="100"
+            alt="Курица 1000 грамм">
           <div class="card__information">
             <h2 class="card__name">
               Cat Energy PRO 1000 г
             </h2>
-            <div class="card__box">
+            <div class="card__box box">
               <p class="card__box-name">
                 Масса
               </p>
@@ -114,7 +115,8 @@
           <button class="card__button" type="button">
             Заказать
           </button>
-        <li class="catalog-container-item card">
+        </li>
+        <li class="catalog-container__item card">
           <img class="card__photo" src="/source/img/catalog_fish.png" width="68" height="86" alt="Рыба 500 грамм">
           <div class="card__information">
             <h2 class="card__name">
@@ -149,7 +151,7 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container-item card">
+        <li class="catalog-container__item card">
           <img class="card__photo" src="/source/img/catalog_fish.png" width="84" height="100" alt="Рыба 1000 грамм">
           <div class="card__information">
             <h2 class="card__name">
@@ -184,8 +186,9 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container-item card">
-          <img class="card__photo" src="/source/img/catalog_buckwheat.png" width="68" height="86" alt="Гречка 500 грамм">
+        <li class="catalog-container__item card">
+          <img class="card__photo" src="/source/img/catalog_buckwheat.png" width="68" height="86"
+            alt="Гречка 500 грамм">
           <div class="card__information">
             <h2 class="card__name">
               Cat Energy PRO 500 г
@@ -219,8 +222,9 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container-item card">
-          <img class="card__photo" src="/source/img/catalog_buckwheat.png" width="84" height="100" alt="Гречка 1000 грамм">
+        <li class="catalog-container__item card">
+          <img class="card__photo" src="/source/img/catalog_buckwheat.png" width="84" height="100"
+            alt="Гречка 1000 грамм">
           <div class="card__information">
             <h2 class="card__name">
               Cat Energy PRO 1000 г
@@ -254,7 +258,7 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container-item card">
+        <li class="catalog-container__item card">
           <img class="card__photo" src="/source/img/catalog_rice.png" width="68" height="86" alt="Рис 500 грамм">
           <div class="card__information">
             <h2 class="card__name">
@@ -289,8 +293,8 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container-item card card-add">
-          <button class="card__button--add" type="button">
+        <li class="catalog-container__item card card-add">
+          <button class="card__button card__button--add" type="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 30 30">
               <path stroke="#D3D3D3" stroke-width="2" d="M15 0v30M30 15H0" />
             </svg>
@@ -311,8 +315,8 @@
       <h2 class="catalog-container__title">
         Дополнительные товары
       </h2>
-      <ul class="catalog-container-list">
-        <li class="catalog-container-item card">
+      <ul class="catalog-container__list">
+        <li class="catalog-container__item card">
           <div class="card__information">
             <h2 class="card__name">
               Сахарозаменитель
@@ -330,7 +334,7 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container-item card">
+        <li class="catalog-container__item card">
           <div class="card__information">
             <h2 class="card__name">
               Питьевая вода
@@ -348,7 +352,7 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container-item card">
+        <li class="catalog-container__item card">
           <div class="card__information">
             <h2 class="card__name">
               Молоко
@@ -366,7 +370,7 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container-item card">
+        <li class="catalog-container__item card">
           <div class="card__information">
             <h2 class="card__name">
               Витамины
@@ -398,11 +402,11 @@
       <h2 class="visually-hidden">
         Расположение организации
       </h2>
-      <div class="address__wrapper wrapper">
-        <p class="wrapper__title">
+      <div class="address__wrapper">
+        <p class="address__wrapper-title">
           Приглашаем к сотрудничеству дилеров!
         </p>
-        <p class="wrapper__content">
+        <p class="address__wrapper-content">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </p>
       </div>
