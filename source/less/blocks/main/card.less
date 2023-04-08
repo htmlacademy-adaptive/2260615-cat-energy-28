@@ -31,30 +31,35 @@
 .card__information {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
 
-  h2 {
-    .list-reset;
-    width: 76px;
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    grid-column: span 2;
-    color: #222222;
-  }
+.card__name {
+  .list-reset;
+  width: 76px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  grid-column: span 2;
+  color: #222222;
 
-  p {
-    .list-reset;
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #444444;
+  &--add {
+    width: auto;
   }
 }
+
+.card__content {
+  .list-reset;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
 
 .card--add {
   display: flex;
