@@ -1,22 +1,19 @@
 .main-form {
   .list-reset;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
   margin-bottom: 24px;
   border-bottom: 1px solid #d9d9d9;
+}
 
-  &__name{
-    display: flex;
-    align-items: center;
-  }
+.main-form__name {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
 
-  &__value {
-    .list-reset;
-    box-sizing: border-box;
-    margin-left: 13px;
-    padding: 14px 20px;
-    margin-right: 20px;
-  }
+}
 
+.main-form__value {
+  .list-reset;
+  padding: 14px 20px;
 }

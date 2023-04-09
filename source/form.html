@@ -64,7 +64,7 @@
             <input class="main-form__value" type="text" name="number" value="7" required>
           </label>
           <label class="main-form__name">Возраст(лет):*
-            <input class="main-form__value" name="age" type="text" value="7">
+            <input class="main-form__value" name="age" type="text" value="7" style="min-width:10px"> <!--тут не понимаю-->
           </label>
         </fieldset>
         <fieldset class="form-selection__target target">
@@ -99,7 +99,7 @@
           </ul>
         </fieldset>
         <fieldset class="form-selection__contacts contacts">
-          <legend class="contacts__title">
+          <legend class="form-selection__title contacts__title">
             Контактные данные (владельца кота)
           </legend>
             <label class="main-form__name contacts__box-name">E-mail:*
@@ -110,16 +110,16 @@
             </label>
         </fieldset>
         <fieldset class="form-selection__comment comment">
-          <legend class="comment__title">
+          <legend class="form-selection__title comment__title">
             Комментарий
           </legend>
-          <label class="comment__name visually-hidden">Описание повадок кота
-            <textarea name="comment__value" rows="5" placeholder="Расскажите обо всех повадках кота">
+          <label class="comment__name">
+            <textarea name="comment__value" cols="35" rows="5">Расскажите обо всех повадках кота
           </textarea>
           </label>
         </fieldset>
         <fieldset class="form-selection__additionally additionally">
-          <legend class="additionally__title">
+          <legend class="form-selection__title additionally__title">
             Дополнительно
           </legend>
           <ul class="additionally__list">
@@ -148,7 +148,7 @@
         <button class="button button__submit" type="submit">
           Отправить заявку
         </button>
-        <p>
+        <p class="form-comment">
           * — Обязательные поля
         </p>
       </form>
