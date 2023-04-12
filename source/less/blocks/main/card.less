@@ -3,7 +3,7 @@
   width: 280px;
   margin: 20px auto;
   grid-template-columns: 1fr 1fr;
-  gap: 13px;
+  margin-bottom: 19px;
 }
 
 .card__photo {
@@ -11,11 +11,11 @@
 }
 
 .card__button {
-  .bg-color;
+  .button-sample;
   box-sizing: border-box;
   padding: 10px 109px;
   grid-column: span 2;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -36,7 +36,7 @@
 .card__name {
   .list-reset;
   width: 76px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -45,19 +45,31 @@
   grid-column: span 2;
   color: #222222;
 
-  &--add {
+  &--additional {
     width: auto;
   }
 }
 
-.card__content {
+.card__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: span 2;
+  gap: 6px;
+}
+
+.card__content,
+.card__value {
   .list-reset;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: #444444;
+}
+
+.card__value {
+  margin-left: auto;
 }
 
 
@@ -66,25 +78,20 @@
   flex-direction: column;
   align-items: center;
   gap: 0;
+  margin-top: 36px;
 
-  h2 {
+  .card__name {
     .list-reset;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: #111111;
+    width: auto;
   }
 
-  p {
-    .list-reset;
-    font-family: "Lato", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #444444;
+  .card__content {
     margin-top: 8px;
     margin-bottom: 21px;
   }
