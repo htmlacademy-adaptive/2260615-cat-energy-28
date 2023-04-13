@@ -6,11 +6,39 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 120px;
   line-height: 20px;
   padding: 10px 20px 18px;
+  width: 320px;
+  box-sizing: border-box;
 }
 
-.main-header__main-nav {
-  text-transform: uppercase;
+@media (min-width: @tablet-width) {
+  .main-header {
+    width: 708px;
+    padding: 10px 30px 18px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    box-sizing: border-box;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    .list-reset;
+    margin-top: 153px;
+    width: 1220px;
+    font-size: 18px;
+    line-height: 24px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    position: relative;
+  }
 }
