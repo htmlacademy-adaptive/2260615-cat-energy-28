@@ -1,5 +1,5 @@
 .main-nav__list {
-  display: block;
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -13,6 +13,10 @@
   .list-reset;
   border: none;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__toggle:focus-within + .main-nav__list {
