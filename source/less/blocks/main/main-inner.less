@@ -1,16 +1,17 @@
-.main-inner {
-  width: 280px;
-  margin: 0 auto;
-}
-
-.main-inner__catalog-container {
-  margin-bottom: 25px;
-}
-
 .main-inner__box-present {
-  margin-top: 54px;
-  padding: 187px 61px 43px 58px;
   background-color: rgba(104, 183, 56, 0.85);
+  box-sizing: border-box;
+  margin: 35px 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 69px 31px 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    width: 245px;
+    height: 289px;
+  }
 }
 
 .main-inner__box-present-content {
@@ -21,4 +22,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  padding: 187px 61px 43px 58px;
+
+  @media (min-width: @tablet-width) {
+    padding: 71px 124px 69px 422px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 184px 40px 42px;
+  }
 }
