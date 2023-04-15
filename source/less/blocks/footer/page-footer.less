@@ -5,6 +5,17 @@
   gap: 40px;
   padding: 40px 20px;
   background: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+    padding: 60px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 66px 110px;
+  }
 }
 
 .page-footer__contacts-link {
@@ -15,4 +26,8 @@
   width: 280px;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 167px;
+  }
 }

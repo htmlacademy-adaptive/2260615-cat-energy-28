@@ -1,8 +1,20 @@
 .address__wrapper {
   display: flex;
-  margin: 26px 20px;
-  gap: 2px;
+  padding: 26px 20px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    padding: 56px 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-start;
+    width: 565px;
+    padding: 56px 60px 80px;
+    gap: 87px;
+  }
 }
+
 
 .address__wrapper-title {
   .list-reset;
@@ -11,6 +23,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 139px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .address__wrapper-content {
@@ -20,4 +39,16 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  color: #444444;
+
+  @media (min-width: @tablet-width) {
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.address__map {
+  width: 768px;
+  height: 400px;
 }
