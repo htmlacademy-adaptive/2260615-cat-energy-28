@@ -4,6 +4,17 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0 110px;
+  }
 }
 
 .form-selection__title {
@@ -13,32 +24,9 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
-  margin-bottom: 35px;
-}
 
-.form-selection__main-form {
-  border: 0;
-  text-transform: uppercase;
-}
-
-.form-selection__target {
-  .list-reset;
-  border: 0;
-  text-transform: uppercase;
-  margin-bottom: 25px;
-}
-
-.form-selection__contacts {
-  .list-reset;
-  border: 0;
-}
-
-.form-selection__comment {
-  .list-reset;
-  border: 0;
-}
-
-.form-selection__additionally {
-  .list-reset;
-  border: 0;
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

@@ -6,4 +6,20 @@
   font-size: 14px;
   line-height: 18px;
   width: 280px;
+  margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 13px 45px;
+    margin: 0;
+  }
+}
+
+.button__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-left: 71px;
+    gap: 64px;
+  }
 }

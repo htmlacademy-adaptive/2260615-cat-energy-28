@@ -9,24 +9,18 @@
 
 .catalog-container__title {
   .list-reset;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
   padding: 27px 20px 41px;
   border-top: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
     border: none;
     padding: 65px 30px 163px;
-
-    @media (min-width: @desktop-width) {
-      padding: 65px 110px 163px;
-    }
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 65px 110px 163px;
+  }
+
 
   &--additional {
     font-family: "Oswald", "Arial", sans-serif;
@@ -54,7 +48,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 60px;
+    justify-content: space-between;
     row-gap: 141px;
     margin: 0 auto;
     width: 708px;

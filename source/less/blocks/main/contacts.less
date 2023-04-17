@@ -1,5 +1,20 @@
 .contacts {
-  margin: 26px 0 24px;
+  .list-reset;
+  border: 0;
+  padding: 26px 20px 10px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 70px 70px;
+  }
+}
+
+.contacts__title {
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .contacts__box-name {
