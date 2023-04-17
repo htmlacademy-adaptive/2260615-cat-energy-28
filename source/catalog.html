@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="/css/style.css" rel="stylesheet">
 </head>
@@ -45,7 +46,7 @@
   </header>
   <main class="main-inner">
     <section class="main-inner__catalog-container catalog-container">
-      <h1 class="main-container__title catalog-container__title">
+      <h1 class="main-inner__title catalog-container__title">
         Каталог продукции
       </h1>
       <ul class="catalog-container__list">
@@ -242,74 +243,75 @@
         </li>
       </ul>
     </section>
-    <section class="main-inner__catalog-container catalog-container">
-      <h2 class="catalog-container__title catalog-container__title--additional ">
+    <section class="main-inner__catalog-container catalog-container catalog-container--additional">
+      <h2 class="catalog-container__title catalog-container__title--additional">
         Дополнительные товары
       </h2>
-      <ul class="catalog-container__list">
-        <li class="catalog-container__item card">
+      <ul class="catalog-container__list catalog-container__list--additional">
+        <li class="catalog-container__item card card--additional">
           <h3 class="card__name card__name--additional">
             Сахарозаменитель
           </h3>
-          <dl class="card__box">
-            <dt class="card__content">1 упаковка (100 г)
+          <dl class="card__box card__box--additional">
+            <dt class="card__content card__content--additional">1 упаковка (100 г)
             </dt>
-            <dd class="card__value">200 ₽
+            <dd class="card__value card__value--additional">200 ₽
             </dd>
           </dl>
-          <button class="card__button" type="button">
+          <button class="card__button card__button--additional" type="button">
             Заказать
           </button>
         </li>
-        <li class="catalog-container__item card">
+        <li class="catalog-container__item card card--additional">
           <h3 class="card__name card__name--additional">
             Питьевая вода
           </h3>
-          <dl class="card__box">
-            <dt class="card__content">5 литров
+          <dl class="card__box card__box--additional">
+            <dt class="card__content card__content--additional">5 литров
             </dt>
-            <dd class="card__value">50 ₽
+            <dd class="card__value card__value--additional">50 ₽
             </dd>
           </dl>
-          <button class="card__button" type="button">
+          <button class="card__button card__button--additional" type="button">
             Заказать
           </button>
         </li>
-        <li class="catalog-container__item card">
+        <li class="catalog-container__item card card--additional">
           <h3 class="card__name card__name--additional">
             Молоко
           </h3>
-          <dl class="card__box">
-            <dt class="card__content">1 литр
+          <dl class="card__box card__box--additional">
+            <dt class="card__content card__content--additional">1 литр
             </dt>
-            <dd class="card__value">100 ₽
+            <dd class="card__value card__value--additional">100 ₽
             </dd>
           </dl>
-          <button class="card__button" type="button">
+          <button class="card__button card__button--additional" type="button">
             Заказать
           </button>
         </li>
-        <li class="catalog-container__item card">
+        <li class="catalog-container__item card card--additional">
           <h3 class="card__name card__name--additional">
             Витамины
           </h3>
-          <dl class="card__box">
-            <dt class="card__content"> 1 упаковка (30 г)
+          <dl class="card__box card__box--additional">
+            <dt class="card__content card__content--additional"> 1 упаковка (30 г)
             </dt>
-            <dd class="card__value">300 ₽
+            <dd class="card__value card__value--additional">300 ₽
             </dd>
           </dl>
-          <button class="card__button" type="button">
+          <button class="card__button card__button--additional" type="button">
             Заказать
           </button>
         </li>
       </ul>
+      <div class="main-inner__box-present">
+        <p class="main-inner__box-present-content">
+          Закажите все и получите чехол для кота в подарок!
+        </p>
+      </div>
     </section>
-    <div class="main-inner__box-present">
-      <p class="main-inner__box-present-content">
-        Закажите все и получите чехол для кота в подарок!
-      </p>
-    </div>
+
   </main>
 
   <footer class="page-footer">
@@ -329,7 +331,6 @@
         <img src="img/map.png" width="320" height="362" alt="Карта">
       </div>
     </section>
-
     <section class="page-footer__container">
       <div class="page-footer__logo logo">
         <a class="logo__link" href="https://htmlacademy.ru/">
@@ -389,7 +390,8 @@
           <span class="page-footer__contacts-link-name">
             HTML Academy
           </span>
-          <svg class="page-footer__contacts-link-image" xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none" viewBox="0 0 27 34">
+          <svg class="page-footer__contacts-link-image" xmlns="http://www.w3.org/2000/svg" width="27" height="34"
+            fill="none" viewBox="0 0 27 34">
             <g clip-path="url(#a)">
               <path fill="#666"
                 d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" />

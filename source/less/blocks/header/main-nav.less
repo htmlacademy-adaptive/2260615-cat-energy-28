@@ -1,11 +1,22 @@
-
 .main-nav__list {
   display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+    width: auto;
+  }
 }
 
 .main-nav__toggle {
   .list-reset;
   border: none;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__toggle:focus-within + .main-nav__list {

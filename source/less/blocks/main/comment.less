@@ -1,3 +1,47 @@
+.comment {
+  .list-reset;
+  border: 0;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 70px 76px;
+    border: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: span 2;
+    padding: 0;
+  }
+}
+
+.comment__title {
+  margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 76px;
+  }
+}
+
 .comment__value {
   width: 280px;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 10px 12px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 631px;
+    height: 174px;
+    padding: 10px 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }

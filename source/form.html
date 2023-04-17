@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="/css/style.css" rel="stylesheet">
 </head>
@@ -44,15 +45,15 @@
     </nav>
   </header>
 
-  <main class="main-container">
-    <section class="main-container__form">
-      <h1 class="main-container__title main-container__form-title">
+  <main class="main-inner">
+    <section class="main-inner__form form">
+      <h1 class="main-inner__title form__title">
         Подбор программы
       </h1>
-      <p class="main-container__form-content">
-        Заполните анкету, и мы подберем программу питания для вашего кота
+      <p class="form__content">
+        Заполните анкету, и мы подберем <br>программу питания для вашего кота
       </p>
-      <form class="form-selection" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="form__selection form-selection" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form-selection__main-form main-form">
           <legend class="visually-hidden">
             Основные данные:
@@ -61,7 +62,7 @@
             <input class="main-form__value" type="text" name="name" value="Барсик" required>
           </label>
           <label class="main-form__name">Вес(кг):*
-            <input class="main-form__value" type="text" name="number" value="7" required>
+            <input class="main-form__value" type="text" name="weight" value="7" required>
           </label>
           <label class="main-form__name">Возраст(лет):*
             <input class="main-form__value" name="age" type="text" value="7">
@@ -99,9 +100,11 @@
           </ul>
         </fieldset>
         <fieldset class="form-selection__contacts contacts">
-          <legend class="form-selection__title contacts__title">
+          <legend class="visually-hidden">
             Контактные данные (владельца кота)
           </legend>
+          <h2 class="form-selection__title contacts__title"> Контактные данные (владельца кота)
+          </h2>
           <label class="main-form__name contacts__box-name">E-mail:*
             <input class="main-form__value contacts__box-value" type="email" name="email"
               placeholder="kuklachev@gmail.com" required>
@@ -112,18 +115,22 @@
           </label>
         </fieldset>
         <fieldset class="form-selection__comment comment">
-          <legend class="form-selection__title comment__title">
+          <legend class="visually-hidden">
             Комментарий
           </legend>
+          <h2 class="form-selection__title comment__title">Комментарий
+          </h2>
           <label class="comment__name">
-            <textarea name="comment__value" cols="35" rows="5">Расскажите обо всех повадках кота
-          </textarea>
+            <textarea class="comment__value" name="comment__value" rows="5"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </fieldset>
         <fieldset class="form-selection__additionally additionally">
-          <legend class="form-selection__title additionally__title">
+          <legend class="visually-hidden">
             Дополнительно
           </legend>
+          <h2 class="form-selection__title additionally__title">Дополнительно
+          </h2>
           <ul class="additionally__list">
             <li class="additionally__item">
               <label class="additionally__name">Сахарозаменитель
@@ -147,12 +154,14 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button button__submit" type="submit">
-          Отправить заявку
-        </button>
-        <p class="form-comment">
-          * — Обязательные поля
-        </p>
+        <div class="button__wrapper">
+          <button class="button button__submit" type="submit">
+            Отправить заявку
+          </button>
+          <p class="form-comment">
+            * — Обязательные поля
+          </p>
+        </div>
       </form>
     </section>
   </main>
@@ -234,7 +243,8 @@
           <span class="page-footer__contacts-link-name">
             HTML Academy
           </span>
-          <svg class="page-footer__contacts-link-image" xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none" viewBox="0 0 27 34">
+          <svg class="page-footer__contacts-link-image" xmlns="http://www.w3.org/2000/svg" width="27" height="34"
+            fill="none" viewBox="0 0 27 34">
             <g clip-path="url(#a)">
               <path fill="#666"
                 d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" />

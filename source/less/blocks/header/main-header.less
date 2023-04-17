@@ -8,9 +8,22 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  box-sizing: border-box;
   padding: 10px 20px 18px;
-}
 
-.main-header__main-nav {
-  text-transform: uppercase;
+  @media (min-width: @tablet-width) {
+    padding: 18px 31px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    box-sizing: border-box;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 53px 110px 29px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

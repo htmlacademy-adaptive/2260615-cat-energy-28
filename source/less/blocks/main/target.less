@@ -1,3 +1,24 @@
+.target {
+  .list-reset;
+  border: 0;
+  text-transform: uppercase;
+  padding: 22px 20px 19px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    padding: 25px 28px;
+    margin: 0 77px;
+    border: 1px solid #e7e7e7;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+}
+
+
 .target__list {
   .list-reset;
   display: flex;
