@@ -6,6 +6,11 @@
   @media (min-width: @tablet-width) {
     padding: 0 70px 54px;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-column: span 2;
+    padding: 0;
+  }
 }
 
 .additionally__title {
@@ -28,6 +33,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 

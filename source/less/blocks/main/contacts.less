@@ -5,7 +5,18 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding: 70px 70px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 71px 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 0 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-column: span 2;
+    padding: 0;
   }
 }
 
@@ -15,8 +26,16 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 76px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .contacts__box-name {
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    width: 569px;
+  }
 }

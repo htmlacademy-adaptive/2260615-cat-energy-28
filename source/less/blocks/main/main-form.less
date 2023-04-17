@@ -4,14 +4,19 @@
   border-bottom: 1px solid #d9d9d9;
   text-transform: uppercase;
   padding: 0 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 77px 58px;
+    padding: 0 77px 72px;
     border: 0;
+    gap: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    .list-reset;
+    width: 569px;
+    padding: 0;
   }
 }
 
@@ -20,25 +25,24 @@
   grid-template-columns: auto minmax(173px, 228px);
   align-items: center;
   gap: 13px;
-  margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: auto 1fr;
-    margin-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 }
 
 .main-form__value {
+  border: 1px solid #e7e7e7;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  padding: 14px 20px;
+  padding: 11px 20px;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
@@ -46,4 +50,3 @@
     line-height: 30px;
   }
 }
-
