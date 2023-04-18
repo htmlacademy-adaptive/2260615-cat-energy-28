@@ -45,11 +45,6 @@
 .example__content {
   .list-reset;
   grid-column: span 2;
-  font-family: "Lato", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
 
   @media (min-width: @tablet-width) {
     grid-column: span 3;
@@ -87,10 +82,15 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  text-align: end;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
   }
 }
 
@@ -109,6 +109,7 @@
     grid-column: span 1;
     font-size: 20px;
     line-height: 20px;
+    align-self: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -119,6 +120,7 @@
 
 .example__slider {
   grid-column: span 2;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     grid-column: span 3;

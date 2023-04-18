@@ -20,30 +20,31 @@
   @media (min-width: @desktop-width) {
     padding: 65px 110px 163px;
   }
+}
 
+.catalog-container__title--additional {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 25px 20px 36px;
 
-  &--additional {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 24px;
-    padding: 25px 20px 36px;
+  @media (min-width: @tablet-width) {
+    padding: 68px 67px 80px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 
-    @media (min-width: @tablet-width) {
-      padding: 68px 67px 80px;
-      font-size: 36px;
-      line-height: 36px;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding: 65px 0 81px;
-    }
+  @media (min-width: @desktop-width) {
+    padding: 65px 0 81px;
   }
 }
 
 .catalog-container__list {
   .list-reset;
+  margin: 0 auto;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     display: flex;

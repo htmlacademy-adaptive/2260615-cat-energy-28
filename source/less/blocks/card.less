@@ -6,14 +6,14 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
+
     display: flex;
     flex-direction: column;
     border: none;
-    box-sizing: border-box;
     background: #f2f2f2;
     position: relative;
     padding: 161px 36px 39px;
-    width: 324px;
+    min-width: 324px;
   }
 
   @media (min-width: @desktop-width) {
@@ -36,7 +36,7 @@
 .card--additional {
   @media (min-width: @tablet-width) {
     width: auto;
-    padding: 26px 38px 28px;
+    padding: 26px 38px;
     border: 1px solid #cdcdcd;
     background-color: #ffffff;
     align-items: center;
@@ -44,23 +44,12 @@
     flex-wrap: wrap;
     flex-direction: row;
     gap: 25px;
-
-    @media (min-width: @desktop-width) {
-      border: none;
-      border-top: 1px solid #cdcdcd;
-      padding: 25px 1px;
-    }
   }
 
-  .card__name {
-    .list-reset;
-    font-family: "Oswald", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #111111;
-    width: auto;
+  @media (min-width: @desktop-width) {
+    border: none;
+    border-top: 1px solid #cdcdcd;
+    padding: 25px 1px;
   }
 }
 
@@ -83,15 +72,15 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
 
-  &--all {
-    background: #f2f2f2;
-    color: #444444;
-    padding: 10px 95px;
+.card__button--all {
+  background: #f2f2f2;
+  color: #444444;
+  padding: 10px 95px;
 
-    @media (min-width: @tablet-width) {
-      padding: 20px 79px;
-    }
+  @media (min-width: @tablet-width) {
+    padding: 20px 79px;
   }
 }
 
@@ -112,7 +101,6 @@
 
 .card__name {
   .list-reset;
-  width: 76px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -121,10 +109,6 @@
   text-transform: uppercase;
   grid-column: span 2;
   color: #222222;
-
-  &--additional {
-    width: auto;
-  }
 }
 
 .card__box {

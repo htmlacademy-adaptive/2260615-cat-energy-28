@@ -5,52 +5,51 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link href="/css/style.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__logo logo">
-      <a class="logo__link" href="https://htmlacademy.ru/">
-        <img class="logo__link-icon" src="img/header-logo.svg" width="34" height="38" alt="Иконка кота">
-        <img class="logo__link-name" src="img/logo.svg" width="101" height="18" alt="Логотип">
-      </a>
-    </div>
-    <nav class="main-header__main-nav main-nav">
-      <button class="main-nav__toggle" type="button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" fill="none" viewBox="0 0 24 18">
-          <path stroke="#000" stroke-width="1.5" d="M0 1.3h24M0 9.3h24M0 17.3h24" />
-        </svg>
-        <span class="visually-hidden">
-          Открыть меню
-        </span>
-      </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__item-link" href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__item-link site-list__item-link--current" href="catalog.html">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__item-link" href="form.html">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <a class="main-header__logo logo" href="https://htmlacademy.ru/">
+      <img class="logo__icon" src="img/header-logo.svg" width="34" height="38" alt="Иконка кота">
+      <img class="logo__link" src="img/logo.svg" width="101" height="18" alt="Логотип">
+    </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" fill="none" viewBox="0 0 24 18">
+        <path stroke="#000" stroke-width="1.5" d="M0 1.3h24M0 9.3h24M0 17.3h24" />
+      </svg>
+      <span class="visually-hidden">
+        Открыть меню
+      </span>
+    </button>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item">
+        <a class="site-list__item-link" href="index.html">
+          Главная
+        </a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__item-link" href="catalog.html">
+          Каталог продукции
+        </a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__item-link site-list__item-link--current" href="form.html">
+          Подбор программы
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
   <main class="main-inner">
-    <section class="main-inner__catalog-container catalog-container">
+    <section class="catalog-container">
       <h1 class="main-inner__title catalog-container__title">
         Каталог продукции
       </h1>
       <ul class="catalog-container__list">
-        <li class="catalog-container__item card">
+        <li class="card">
           <img class="card__photo" src="img/catalog-chicken.png" width="68" height="86" alt="Курица 500 грамм">
           <div class="card__information">
             <h2 class="card__name">
@@ -75,7 +74,7 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container__item card">
+        <li class="card">
           <img class="card__photo" src="img/catalog-chicken.png" width="84" height="100" alt="Курица 1000 грамм">
           <div class="card__information">
             <h2 class="card__name">
@@ -100,7 +99,7 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container__item card">
+        <li class="card">
           <img class="card__photo" src="img/catalog-fish.png" width="68" height="86" alt="Рыба 500 грамм">
           <div class="card__information">
             <h2 class="card__name">
@@ -125,7 +124,7 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container__item card">
+        <li class="card">
           <img class="card__photo" src="img/catalog-fish.png" width="84" height="100" alt="Рыба 1000 грамм">
           <div class="card__information">
             <h2 class="card__name">
@@ -150,7 +149,7 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container__item card">
+        <li class="card">
           <img class="card__photo" src="img/catalog-buckwheat.png" width="68" height="86" alt="Гречка 500 грамм">
           <div class="card__information">
             <h2 class="card__name">
@@ -175,7 +174,7 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container__item card">
+        <li class="card">
           <img class="card__photo" src="img/catalog-buckwheat.png" width="84" height="100" alt="Гречка 1000 грамм">
           <div class="card__information">
             <h2 class="card__name">
@@ -200,7 +199,7 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container__item card">
+        <li class="card">
           <img class="card__photo" src="img/catalog-rice.png" width="68" height="86" alt="Рис 500 грамм">
           <div class="card__information">
             <h2 class="card__name">
@@ -225,7 +224,7 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container__item card card--add">
+        <li class="card card--add">
           <button class="card__button-add" type="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 30 30">
               <path stroke="#D3D3D3" stroke-width="2" d="M15 0v30M30 15H0" />
@@ -243,12 +242,12 @@
         </li>
       </ul>
     </section>
-    <section class="main-inner__catalog-container catalog-container catalog-container--additional">
+    <section class="catalog-container--additional">
       <h2 class="catalog-container__title catalog-container__title--additional">
         Дополнительные товары
       </h2>
       <ul class="catalog-container__list catalog-container__list--additional">
-        <li class="catalog-container__item card card--additional">
+        <li class="card card--additional">
           <h3 class="card__name card__name--additional">
             Сахарозаменитель
           </h3>
@@ -262,7 +261,7 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container__item card card--additional">
+        <li class="card card--additional">
           <h3 class="card__name card__name--additional">
             Питьевая вода
           </h3>
@@ -276,7 +275,7 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container__item card card--additional">
+        <li class="card card--additional">
           <h3 class="card__name card__name--additional">
             Молоко
           </h3>
@@ -290,7 +289,7 @@
             Заказать
           </button>
         </li>
-        <li class="catalog-container__item card card--additional">
+        <li class="card card--additional">
           <h3 class="card__name card__name--additional">
             Витамины
           </h3>
@@ -332,16 +331,14 @@
       </div>
     </section>
     <section class="page-footer__container">
-      <div class="page-footer__logo logo">
-        <a class="logo__link" href="https://htmlacademy.ru/">
-          <img class="logo__link-name" src="img/logo.svg" width="101" height="18" alt="Логотип">
-        </a>
-      </div>
+      <a class="page-footer__logo logo" href="https://htmlacademy.ru/">
+        <img class="logo__link" src="img/logo.svg" width="101" height="18" alt="Логотип">
+      </a>
       <div class="page-footer__box">
         <h2 class="visually-hidden">
           Социальные сети
         </h2>
-        <ul class="page-footer__social-list social-list">
+        <ul class="social-list">
           <li class="social-list__item">
             <a class="social-list__link button-vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">

@@ -5,55 +5,53 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link href="/css/style.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__logo logo">
-      <a class="logo__link" href="https://htmlacademy.ru/">
-        <img class="logo__link-icon" src="img/header-logo.svg" width="34" height="38" alt="Иконка кота">
-        <img class="logo__link-name" src="img/logo.svg" width="101" height="18" alt="Логотип">
-      </a>
-    </div>
-    <nav class="main-header__main-nav main-nav">
-      <button class="main-nav__toggle" type="button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" fill="none" viewBox="0 0 24 18">
-          <path stroke="#000" stroke-width="1.5" d="M0 1.3h24M0 9.3h24M0 17.3h24" />
-        </svg>
-        <span class="visually-hidden">
-          Открыть меню
-        </span>
-      </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__item-link" href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__item-link" href="catalog.html">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__item-link site-list__item-link--current" href="form.html">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <a class="main-header__logo logo" href="https://htmlacademy.ru/">
+      <img class="logo__icon" src="img/header-logo.svg" width="34" height="38" alt="Иконка кота">
+      <img class="logo__link" src="img/logo.svg" width="101" height="18" alt="Логотип">
+    </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" fill="none" viewBox="0 0 24 18">
+        <path stroke="#000" stroke-width="1.5" d="M0 1.3h24M0 9.3h24M0 17.3h24" />
+      </svg>
+      <span class="visually-hidden">
+        Открыть меню
+      </span>
+    </button>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item">
+        <a class="site-list__item-link" href="index.html">
+          Главная
+        </a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__item-link" href="catalog.html">
+          Каталог продукции
+        </a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__item-link site-list__item-link--current" href="form.html">
+          Подбор программы
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
 
   <main class="main-inner">
-    <section class="main-inner__form form">
+    <section class="form">
       <h1 class="main-inner__title form__title">
         Подбор программы
       </h1>
       <p class="form__content">
-        Заполните анкету, и мы подберем <br>программу питания для вашего кота
+        Заполните анкету, и мы подберем программу питания для вашего кота
       </p>
-      <form class="form__selection form-selection" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="form-selection" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form-selection__main-form main-form">
           <legend class="visually-hidden">
             Основные данные:
@@ -68,7 +66,7 @@
             <input class="main-form__value" name="age" type="text" value="7">
           </label>
         </fieldset>
-        <fieldset class="form-selection__target target">
+        <fieldset class="target">
           <legend class="visually-hidden">
             Цель программы
           </legend>
@@ -99,22 +97,22 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-selection__contacts contacts">
+        <fieldset class="contacts">
           <legend class="visually-hidden">
             Контактные данные (владельца кота)
           </legend>
           <h2 class="form-selection__title contacts__title"> Контактные данные (владельца кота)
           </h2>
           <label class="main-form__name contacts__box-name">E-mail:*
-            <input class="main-form__value contacts__box-value" type="email" name="email"
+            <input class="main-form__value" type="email" name="email"
               placeholder="kuklachev@gmail.com" required>
           </label>
           <label class="main-form__name contacts__box-name">Телефон:*
-            <input class="main-form__value contacts__box-value" type="tel" name="phone" placeholder="8 (960) 900-60-90"
+            <input class="main-form__value" type="tel" name="phone" placeholder="8 (960) 900-60-90"
               required>
           </label>
         </fieldset>
-        <fieldset class="form-selection__comment comment">
+        <fieldset class="comment">
           <legend class="visually-hidden">
             Комментарий
           </legend>
@@ -125,7 +123,7 @@
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </fieldset>
-        <fieldset class="form-selection__additionally additionally">
+        <fieldset class="additionally">
           <legend class="visually-hidden">
             Дополнительно
           </legend>
@@ -183,18 +181,15 @@
         <img src="img/map.png" width="320" height="362" alt="Карта">
       </div>
     </section>
-
     <section class="page-footer__container">
-      <div class="page-footer__logo logo">
-        <a class="logo__link" href="https://htmlacademy.ru/">
-          <img class="logo__link-name" src="img/logo.svg" width="101" height="18" alt="Логотип">
-        </a>
-      </div>
+      <a class="page-footer__logo logo" href="https://htmlacademy.ru/">
+        <img class="logo__link" src="img/logo.svg" width="101" height="18" alt="Логотип">
+      </a>
       <div class="page-footer__box">
         <h2 class="visually-hidden">
           Социальные сети
         </h2>
-        <ul class="page-footer__social-list social-list">
+        <ul class="social-list">
           <li class="social-list__item">
             <a class="social-list__link button-vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">
