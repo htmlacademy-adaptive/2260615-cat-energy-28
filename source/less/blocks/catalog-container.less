@@ -43,20 +43,20 @@
 
 .catalog-container__list {
   .list-reset;
-  margin: 0 auto;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 141px;
-    margin: 0 auto;
-    width: 708px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px 80px;
+    margin: 0 110px;
   }
 }
 
