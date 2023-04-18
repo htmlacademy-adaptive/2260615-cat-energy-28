@@ -12,11 +12,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    gap: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     flex-direction: row;
     flex-wrap: wrap;
     grid-column: span 2;
     padding: 0;
+    gap: 78px;
   }
 }
 
@@ -28,12 +30,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
-  }
-}
-
-.contacts__box-name {
-  @media (min-width: @desktop-width) {
-    width: 40%;
+    grid-column: span 2;
+    margin: 0;
   }
 }

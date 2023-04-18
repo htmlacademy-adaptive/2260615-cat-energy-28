@@ -1,9 +1,9 @@
 .catalog-container--additional {
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 110px 85px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 80px;
+    padding: 76px 110px;
   }
 }
 
@@ -37,7 +37,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 65px 0 81px;
+    padding: 0;
+    grid-column: span 2;
   }
 }
 
@@ -64,7 +65,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
-    width: 708px;
+    width: auto;
     gap: 0;
   }
 

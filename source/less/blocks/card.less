@@ -4,6 +4,7 @@
   grid-template-columns: 1fr 1fr;
   border-top: 1px solid hsl(0, 0%, 92%);
   box-sizing: border-box;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -12,10 +13,6 @@
     background: #f2f2f2;
     position: relative;
     padding: 161px 36px 39px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 245px;
   }
 }
 
@@ -47,7 +44,8 @@
   @media (min-width: @desktop-width) {
     border: none;
     border-top: 1px solid #cdcdcd;
-    padding: 25px 1px;
+    padding: 20px 0;
+    gap: 0;
   }
 }
 
@@ -84,7 +82,7 @@
 
 .card__button--additional {
   @media (min-width: @tablet-width) {
-    width: 632px;
+    width: 100%;
   }
 
   @media (min-width: @desktop-width) {
@@ -118,7 +116,9 @@
 
 .card__box--additional {
   @media (min-width: @tablet-width) {
+    display: flex;
     margin: 0;
+    gap: 50px;
   }
 }
 
