@@ -1,7 +1,12 @@
+.address {
+  position: relative;
+}
+
 .address__wrapper {
   display: flex;
   padding: 26px 20px;
   background-color: #f2f2f2;
+  gap: 2px;
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
@@ -9,10 +14,14 @@
   }
 
   @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    background-color: #ffffff;
     justify-content: flex-start;
-    width: 565px;
-    padding: 56px 60px 80px;
+    padding: 56px 80px;
     gap: 87px;
+    top: 95px;
+    left: 110px;
   }
 }
 
@@ -49,6 +58,7 @@
 }
 
 .address__map {
-  width: 768px;
-  height: 400px;
+  display: block;
+  border: none;
+  width: 100%;
 }

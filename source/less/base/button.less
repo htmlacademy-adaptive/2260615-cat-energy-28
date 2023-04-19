@@ -5,24 +5,26 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  width: 280px;
-  margin: 0 20px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
     padding: 13px 45px;
     margin: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 568px;
+    width: 50%;
   }
 }
 
 .button__wrapper {
+  .side-indents;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-direction: row;
     margin-left: 71px;
     gap: 64px;
   }

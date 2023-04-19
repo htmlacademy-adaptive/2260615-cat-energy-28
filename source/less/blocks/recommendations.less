@@ -5,6 +5,11 @@
   align-items: center;
   padding: 20px;
 
+  @media (min-width: @tablet-width) {
+    gap: 30px;
+    padding: 30px;
+  }
+
   @media (min-width: @desktop-width) {
     flex-direction: row;
     gap: 80px;
@@ -17,18 +22,15 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  height: 266px;
   padding: 30px 33px 18px 20px;
   gap: 30px;
   background-color: #f2f2f2;
 
   @media (min-width: @tablet-width) {
-    height: 372px;
     padding: 77px 316px 53px 52px;
   }
 
   @media (min-width: @desktop-width) {
-    height: 374px;
     padding: 77px 61px 59px 52px;
   }
 }
@@ -50,11 +52,6 @@
 
 .recommendations__box-content {
   .list-reset;
-  font-family: "Lato", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
