@@ -1,14 +1,17 @@
 .site-list {
   .list-reset;
   box-sizing: border-box;
-  z-index: 1;
   text-transform: uppercase;
-  position: absolute;
   background-color: #ffffff;
-  top: 46px;
-  left: -300px;
-  min-width: 320px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: 766px) {
+    z-index: 1;
+    position: absolute;
+    top: 46px;
+    left: -300px;
+    min-width: 320px;
+  }
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -30,4 +33,7 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  @media (min-width: @tablet-width) {
+    padding: 22px 0;
+  }
 }

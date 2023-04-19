@@ -18,9 +18,13 @@
 
 .button__wrapper {
   .side-indents;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-direction: row;
     margin-left: 71px;
     gap: 64px;
   }
