@@ -1,7 +1,8 @@
 .example {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  row-gap: 20px;
+  column-gap: 32px;
   background-color: #eaeaea;
   padding: 25px 20px 40px;
 
@@ -59,7 +60,7 @@
   }
 }
 
-.example__block-weight {
+.example__block {
   .list-reset;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -67,30 +68,59 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  padding: 15px 20px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  width: 124px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
+    padding: 15px 30px;
     font-size: 30px;
     line-height: 37px;
+    width: 162px;
+    margin-bottom: 0;
   }
 }
 
 .example__block-time {
-  .list-reset;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  text-transform: uppercase;
-  text-align: end;
-
-  @media (min-width: @tablet-width) {
-    font-size: 30px;
-    line-height: 37px;
-  }
-
   @media (min-width: @desktop-width) {
     text-align: start;
+  }
+}
+
+.example__block-comment {
+  .list-reset;
+  position: absolute;
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  background-color: #eaeaea;
+  text-transform: lowercase;
+  box-sizing: border-box;
+  width: 77px;
+  top: 63px;
+  left: 22px;
+  padding: 1px 4px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+    top: 56px;
+    left: 32px;
+    width: auto;
+  }
+}
+
+.example__block-time-comment {
+  @media (min-width: @tablet-width) {
+    left: 18px;
   }
 }
 
