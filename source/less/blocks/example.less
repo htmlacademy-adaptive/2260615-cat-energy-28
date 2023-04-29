@@ -11,13 +11,25 @@
     background-color: #ffffff;
     padding: 43px 30px 100px;
     border-top: 1px solid hsl(0, 0%, 90%);
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
     border-top: none;
-    padding: 43px 110px 75px;
+    padding: 69px 110px 75px;
     gap: 0;
+  }
+}
+
+.example::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    background-color: #eaeaea;
+    position: absolute;
+    height: 462px;
+    width: 100%;
+    bottom: 0;
   }
 }
 
@@ -51,17 +63,20 @@
     grid-column: span 3;
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: span 2;
     width: 436px;
+    z-index: 2;
     margin-bottom: 69px;
   }
 }
 
 .example__block {
   .list-reset;
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -72,25 +87,21 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   text-align: center;
-  position: relative;
   margin-bottom: 20px;
   width: 124px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding: 15px 30px;
+    padding: 15px 30px 20px;
     font-size: 30px;
     line-height: 37px;
-    width: 162px;
+    width: 164px;
+    height: 77px;
     margin-bottom: 0;
+    z-index: 2;
   }
 }
 
-.example__block-time {
-  @media (min-width: @desktop-width) {
-    text-align: start;
-  }
-}
 
 .example__block-comment {
   .list-reset;
@@ -104,7 +115,7 @@
   text-transform: lowercase;
   box-sizing: border-box;
   width: 77px;
-  top: 63px;
+  top: 46px;
   left: 22px;
   padding: 1px 4px;
 
@@ -112,9 +123,13 @@
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
-    top: 56px;
+    top: 64px;
     left: 32px;
     width: auto;
+
+    @media (min-width: @desktop-width) {
+      background-color: #eaeaea;
+    }
   }
 }
 
@@ -140,11 +155,14 @@
     font-size: 20px;
     line-height: 20px;
     align-self: center;
+    text-align: end;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 55px;
     text-align: start;
+    z-index: 2;
+    grid-column: span 2;
+    margin-top: 55px;
   }
 }
 
@@ -154,13 +172,16 @@
 
   @media (min-width: @tablet-width) {
     grid-column: span 3;
-    margin: 100px auto 0;
+    margin: auto 0;
+    margin-top: 50px;
+    z-index: 2;
   }
 
   @media (min-width: @desktop-width) {
     order: -1;
     grid-column: 3/4;
     grid-row: span 4;
+    margin: 0;
   }
 }
 

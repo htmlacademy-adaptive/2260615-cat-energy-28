@@ -19,6 +19,17 @@
     box-shadow: none;
     width: auto;
     gap: 35px;
+    z-index: 1;
+  }
+}
+
+.site-list__item-link--current {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid #68b738;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid #ffffff;
   }
 }
 
@@ -34,6 +45,6 @@
   text-decoration: none;
 
   @media (min-width: @tablet-width) {
-    padding: 22px 0;
+    padding: 10px 0;
   }
 }

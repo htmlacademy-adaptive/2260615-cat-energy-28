@@ -1,7 +1,7 @@
 .promo {
   display: flex;
   flex-direction: column;
-  background-image: url("/img/backgound-main.jpg");
+  background-image: url("/img/background-main.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   align-items: center;
@@ -15,7 +15,20 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 81px 110px 267px;
+    padding: 81px 110px;
+    position: relative;
+  }
+}
+
+.promo::after {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    background-image: url("/img/background-main-desktop.jpg");
+    width: 720px;
+    height: 694px;
+    top: -200px;
+    right: 0;
   }
 }
 
@@ -66,11 +79,12 @@
     right: 0;
     height: 609px;
     width: auto;
+    z-index: 2;
   }
 
   @media (min-width: @desktop-width) {
     top: 0;
-    right: 220px;
+    right: 330px;
     width: auto;
     height: 499px;
   }

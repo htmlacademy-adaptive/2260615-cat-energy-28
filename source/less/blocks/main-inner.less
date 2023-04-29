@@ -13,12 +13,17 @@
 }
 
 .main-inner__box-present {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("/img/box-present.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 280px;
   box-sizing: border-box;
-  margin: 35px 20px;
+  margin: 35px auto;
+
 
   @media (min-width: @tablet-width) {
     margin: 69px 31px 76px;
+    width: 100%;
   }
 
   @media (min-width: @desktop-width) {
@@ -36,7 +41,9 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  padding: 187px 61px 43px 58px;
+  padding: 187px 60px 43px;
+  box-sizing: border-box;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     padding: 71px 124px 69px 422px;
