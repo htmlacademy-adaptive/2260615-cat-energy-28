@@ -1,11 +1,15 @@
 .promo {
   display: flex;
   flex-direction: column;
-  background-image: url("../../../img/backgound-main.png");
+  background-image: url("/img/background-main@1x.png");
   background-size: 100%;
   background-repeat: no-repeat;
   align-items: center;
   padding: 27px 20px 20px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/background-main@2x.png");
+  }
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -16,6 +20,24 @@
 
   @media (min-width: @desktop-width) {
     padding: 81px 110px 267px;
+    position: relative;
+  }
+}
+
+.promo::after {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    background-image: url("/img/background-main-desktop@1x.png");
+    background-size: cover;
+    width: 50%;
+    height: 694px;
+    top: -200px;
+    right: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/background-main-desktop@2x.png");
+    }
   }
 }
 
@@ -35,6 +57,7 @@
     font-size: 60px;
     line-height: 60px;
     color: #000000;
+    z-index: 2;
   }
 }
 
@@ -56,21 +79,22 @@
     line-height: 20px;
     margin-top: 41px;
     margin-bottom: 49px;
+    z-index: 2;
   }
 }
 
 .promo__image {
   @media (min-width: @tablet-width) {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 609px;
-    width: auto;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   @media (min-width: @desktop-width) {
-    top: 0;
-    right: 220px;
+    top: 40%;
+    left: 58%;
+    z-index: 2;
   }
 }
 

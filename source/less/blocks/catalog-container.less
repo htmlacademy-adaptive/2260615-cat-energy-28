@@ -1,7 +1,7 @@
 .catalog-container--additional {
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 4fr 1fr;
     gap: 80px;
     padding: 76px 110px;
   }
@@ -46,17 +46,16 @@
   .list-reset;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    gap: 141px 60px;
     margin: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 60px 80px;
+    gap: 144px 80px;
     margin: 0 110px;
   }
 }
@@ -70,7 +69,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 896px;
     margin: 0;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
