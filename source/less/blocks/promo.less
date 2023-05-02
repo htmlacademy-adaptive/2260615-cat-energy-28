@@ -30,7 +30,7 @@
     content: "";
     background-image: url("/img/background-main-desktop@1x.png");
     background-size: cover;
-    width: 720px;
+    width: 50%;
     height: 694px;
     top: -200px;
     right: 0;
@@ -57,6 +57,7 @@
     font-size: 60px;
     line-height: 60px;
     color: #000000;
+    z-index: 2;
   }
 }
 
@@ -78,20 +79,21 @@
     line-height: 20px;
     margin-top: 41px;
     margin-bottom: 49px;
+    z-index: 2;
   }
 }
 
 .promo__image {
   @media (min-width: @tablet-width) {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   @media (min-width: @desktop-width) {
-    top: 0;
-    right: 330px;
-    left: auto;
+    top: 40%;
+    left: 58%;
     z-index: 2;
   }
 }
