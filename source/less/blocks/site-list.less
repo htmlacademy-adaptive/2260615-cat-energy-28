@@ -23,6 +23,12 @@
   }
 }
 
+.site-list--index {
+  @media (min-width: @desktop-width) {
+    background-color: inherit;
+  }
+}
+
 .site-list__item-link--current {
   @media (min-width: @tablet-width) {
     border-bottom: 2px solid #68b738;
@@ -43,4 +49,14 @@
   @media (min-width: @tablet-width) {
     padding: 10px 0;
   }
+}
+
+.site-list__item-link--index {
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.site-list__item-link--index.site-list__item-link--current {
+  border-bottom: 2px solid #ffffff;
 }
