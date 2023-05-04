@@ -17,7 +17,7 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 2fr;
     border-top: none;
-    padding: 69px 110px 75px;
+    padding: 0 110px 75px;
     gap: 0;
   }
 }
@@ -102,7 +102,6 @@
   }
 }
 
-
 .example__block-comment {
   .list-reset;
   position: absolute;
@@ -167,11 +166,14 @@
 }
 
 .example__slider {
-  grid-template-columns: 140px 140px;
   grid-column: span 2;
   text-align: center;
+  width: 150px;
+  overflow: hidden;
 
   @media (min-width: @tablet-width) {
+    width: 300px;
+    overflow: hidden;
     grid-column: span 3;
     margin: auto 0;
     margin-top: 50px;
@@ -187,8 +189,11 @@
 }
 
 .example__slider-img {
+  max-width: none;
+  height: none;
+
   @media (min-width: @tablet-width) {
-    max-width: auto;
-    height: 512px;
+    max-width: none;
+    height: none;
   }
 }
