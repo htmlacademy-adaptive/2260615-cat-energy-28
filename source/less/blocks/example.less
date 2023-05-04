@@ -166,18 +166,23 @@
 }
 
 .example__slider {
+  display: flex;
+  position: relative;
+}
+
+.example__slider-fat {
   grid-column: span 2;
   text-align: center;
   width: 150px;
   overflow: hidden;
+  z-index: 3;
 
   @media (min-width: @tablet-width) {
+    background-color: none;
     width: 300px;
     overflow: hidden;
     grid-column: span 3;
     margin: auto 0;
-    margin-top: 50px;
-    z-index: 2;
   }
 
   @media (min-width: @desktop-width) {
@@ -188,12 +193,11 @@
   }
 }
 
+.example__slider-thin {
+  position: absolute;
+  content: "";
+}
+
 .example__slider-img {
   max-width: none;
-  height: none;
-
-  @media (min-width: @tablet-width) {
-    max-width: none;
-    height: none;
-  }
 }
