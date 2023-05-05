@@ -74,11 +74,21 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #000000;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.recommendations__box-link::after {
+  position: absolute;
+  content: "";
+  mask: url("../img/stek.svg#arrow-right");
+  width: 32px;
+  height: 10px;
+  background-color: #000000;
 }
 
 .recommendations__image {
