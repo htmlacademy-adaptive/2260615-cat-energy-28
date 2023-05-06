@@ -171,6 +171,7 @@
 
   @media (min-width: @tablet-width) {
     grid-column: span 2;
+    margin-top: 80px;
   }
 
   @media (min-width: @desktop-width) {
@@ -211,4 +212,22 @@
 .example__block-wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+.example__button-slider {
+  position: absolute;
+  border: none;
+  background-color: inherit;
+  top: 40%;
+  z-index: 2;
+}
+
+.example__slider::after {
+  content: "";
+  mask: url("../img/sprite.svg#slider-line");
+  background-color: #666666;
+  position: absolute;
+  width: 4px;
+  height: 100%;
+
 }

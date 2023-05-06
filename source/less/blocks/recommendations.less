@@ -83,12 +83,32 @@
 }
 
 .recommendations__box-link::after {
-  position: absolute;
   content: "";
-  mask: url("../img/stek.svg#arrow-right");
-  width: 32px;
-  height: 10px;
+  mask-image: url("../img/sprite.svg#arrow-right");
   background-color: #000000;
+  width: 24px;
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  margin-left: 15px;
+  transform: translateY(-50%);
+
+  @media (min-width: @tablet-width) {
+    margin-left: 25px;
+  }
+}
+
+.recommendations__box-link:hover::after,
+.recommendations__box-link:active::after {
+  width: 32px;
+}
+
+.recommendations__box-link:active {
+  opacity: 0.3;
+}
+
+.recommendations__box-link:disabled {
+  opacity: 0.1;
 }
 
 .recommendations__image {
