@@ -11,7 +11,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 81px 110px 267px;
+    padding: 81px 190px 267px;
+    max-width: @desktop-width;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -112,6 +115,7 @@
 }
 
 .promo__button {
+  .list-reset;
   .button-sample;
   position: relative;
   font-family: "Oswald", "Arial", sans-serif;
@@ -120,6 +124,7 @@
   font-size: 14px;
   line-height: 18px;
   width: 100%;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;

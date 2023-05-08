@@ -20,6 +20,9 @@
     border-top: none;
     padding: 0 110px 75px;
     gap: 0 224px;
+    max-width: @desktop-width;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -224,10 +227,18 @@
 
 .example__slider::after {
   content: "";
-  mask: url("../img/sprite.svg#slider-line");
+  mask-image: url("../img/sprite.svg#slider-line");
   background-color: #666666;
   position: absolute;
   width: 4px;
   height: 100%;
+}
 
+.example__button {
+  fill: #68b738;
+  stroke: #68b738;
+}
+
+.slider-line {
+  fill: #68b738;
 }

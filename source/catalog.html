@@ -11,23 +11,27 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="https://htmlacademy.ru/">
-      <img class="logo__icon" src="img/header-logo.svg" width="34" height="38" alt="Иконка кота">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="logo__icon" src="img/header-logo.svg" width="34" height="38" alt="Иконка кота">
+      </picture>
       <img class="logo__link" src="img/logo.svg" width="101" height="18" alt="Логотип">
     </a>
-    <nav class="main-nav main-nav--opened main-nav--nojs">
+    <nav class="main-nav main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">
           Открыть меню
         </span>
       </button>
-      <ul class="main-nav__list site-list">
+      <ul class="main-nav__list site-list site-list--index">
         <li class="site-list__item">
           <a class="site-list__item-link" href="index.html">
             Главная
           </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__item-link site-list__item-link--current" href="catalog.html">
+          <a class="site-list__item-link site-list__item-link--current" href="#">
             Каталог продукции
           </a>
         </li>
@@ -73,15 +77,20 @@
               </dd>
             </dl>
           </div>
-          <button class="card__button" type="button">
+          <a class="card__button" type="button" href="#">
             Заказать
-          </button>
+          </a>
         </li>
         <li class="card">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/catalog-chicken-1000-desktop@1x.png 1x, img/catalog-chicken-1000-desktop@2x.png 2x" width="172" height="196">
-            <source media="(min-width: 768px)" srcset="img/catalog-chicken-1000-tablet@1x.png 1x, img/catalog-chicken-1000-tablet@2x.png 2x" width="168" height="200">
-            <img class="card__photo card__photo--big" src="img/catalog-chicken-1000@1x.png" srcset="img/catalog-chicken-1000@2x.png 2x" width="84" height="100" alt="Курица 1000 грамм">
+            <source media="(min-width: 1440px)"
+              srcset="img/catalog-chicken-1000-desktop@1x.png 1x, img/catalog-chicken-1000-desktop@2x.png 2x"
+              width="172" height="196">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-chicken-1000-tablet@1x.png 1x, img/catalog-chicken-1000-tablet@2x.png 2x" width="168"
+              height="200">
+            <img class="card__photo card__photo--big" src="img/catalog-chicken-1000@1x.png"
+              srcset="img/catalog-chicken-1000@2x.png 2x" width="84" height="100" alt="Курица 1000 грамм">
           </picture>
           <div class="card__information">
             <h2 class="card__name">
@@ -102,14 +111,17 @@
               </dd>
             </dl>
           </div>
-          <button class="card__button" type="button">
+          <a class="card__button" type="button" href="#">
             Заказать
-          </button>
+          </a>
         </li>
         <li class="card">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/catalog-fish-500-tablet@1x.png 1x, img/catalog-fish-500-tablet@2x.png 2x" width="163" height="174">
-            <img class="card__photo" src="img/catalog-fish-500@1x.png" srcset="img/catalog-fish-500@2x.png 2x" width="68" height="86" alt="Рыба 500 грамм">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-fish-500-tablet@1x.png 1x, img/catalog-fish-500-tablet@2x.png 2x" width="163"
+              height="174">
+            <img class="card__photo" src="img/catalog-fish-500@1x.png" srcset="img/catalog-fish-500@2x.png 2x"
+              width="68" height="86" alt="Рыба 500 грамм">
           </picture>
           <div class="card__information">
             <h2 class="card__name">
@@ -130,15 +142,20 @@
               </dd>
             </dl>
           </div>
-          <button class="card__button" type="button">
+          <a class="card__button" type="button" href="#">
             Заказать
-          </button>
+          </a>
         </li>
         <li class="card">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/catalog-fish-1000-desktop@1x.png 1x, img/catalog-fish-1000-desktop@2x.png 2x" width="172" height="196">
-            <source media="(min-width: 768px)" srcset="img/catalog-fish-1000-tablet@1x.png 1x, img/catalog-fish-1000-tablet@2x.png 2x" width="168" height="200">
-            <img class="card__photo card__photo--big" src="img/catalog-fish-1000@1x.png" srcset="img/catalog-fish-1000@2x.png 2x" width="84" height="100" alt="Рыба 1000 грамм">
+            <source media="(min-width: 1440px)"
+              srcset="img/catalog-fish-1000-desktop@1x.png 1x, img/catalog-fish-1000-desktop@2x.png 2x" width="172"
+              height="196">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-fish-1000-tablet@1x.png 1x, img/catalog-fish-1000-tablet@2x.png 2x" width="168"
+              height="200">
+            <img class="card__photo card__photo--big" src="img/catalog-fish-1000@1x.png"
+              srcset="img/catalog-fish-1000@2x.png 2x" width="84" height="100" alt="Рыба 1000 грамм">
           </picture>
           <div class="card__information">
             <h2 class="card__name">
@@ -159,14 +176,17 @@
               </dd>
             </dl>
           </div>
-          <button class="card__button" type="button">
+          <a class="card__button" type="button" href="#">
             Заказать
-          </button>
+          </a>
         </li>
         <li class="card">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/catalog-buckwheat-500-tablet@1x.png 1x, img/catalog-buckwheat-500-tablet@2x.png 2x" width="163" height="174">
-            <img class="card__photo" src="img/catalog-buckwheat-500@1x.png" srcset="img/catalog-buckwheat-500@2x.png 2x" width="68" height="86" alt="Гречка 500 грамм">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-buckwheat-500-tablet@1x.png 1x, img/catalog-buckwheat-500-tablet@2x.png 2x"
+              width="163" height="174">
+            <img class="card__photo" src="img/catalog-buckwheat-500@1x.png" srcset="img/catalog-buckwheat-500@2x.png 2x"
+              width="68" height="86" alt="Гречка 500 грамм">
           </picture>
           <div class="card__information">
             <h2 class="card__name">
@@ -187,15 +207,20 @@
               </dd>
             </dl>
           </div>
-          <button class="card__button" type="button">
+          <a class="card__button" type="button" href="#">
             Заказать
-          </button>
+          </a>
         </li>
         <li class="card">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/catalog-buckwheat-1000-desktop@1x.png 1x, img/catalog-buckwheat-1000-desktop@2x.png 2x" width="172" height="196">
-            <source media="(min-width: 768px)" srcset="img/catalog-buckwheat-1000-tablet@1x.png 1x, img/catalog-buckwheat-1000-tablet@2x.png 2x" width="168" height="200">
-            <img class="card__photo card__photo--big" src="img/catalog-buckwheat-1000@1x.png" srcset="img/catalog-buckwheat-1000@2x.png 2x" width="84" height="100" alt="Гречка 1000 грамм">
+            <source media="(min-width: 1440px)"
+              srcset="img/catalog-buckwheat-1000-desktop@1x.png 1x, img/catalog-buckwheat-1000-desktop@2x.png 2x"
+              width="172" height="196">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-buckwheat-1000-tablet@1x.png 1x, img/catalog-buckwheat-1000-tablet@2x.png 2x"
+              width="168" height="200">
+            <img class="card__photo card__photo--big" src="img/catalog-buckwheat-1000@1x.png"
+              srcset="img/catalog-buckwheat-1000@2x.png 2x" width="84" height="100" alt="Гречка 1000 грамм">
           </picture>
           <div class="card__information">
             <h2 class="card__name">
@@ -216,14 +241,17 @@
               </dd>
             </dl>
           </div>
-          <button class="card__button" type="button">
+          <a class="card__button" type="button" href="#">
             Заказать
-          </button>
+          </a>
         </li>
         <li class="card">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/catalog-rice-500-tablet@1x.png 1x, img/catalog-rice-500-tablet@2x.png 2x" width="163" height="174">
-            <img class="card__photo" src="img/catalog-rice-500@1x.png" srcset="img/catalog-rice-500@2x.png 2x" width="68" height="86" alt="Рис 500 грамм">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-rice-500-tablet@1x.png 1x, img/catalog-rice-500-tablet@2x.png 2x" width="163"
+              height="174">
+            <img class="card__photo" src="img/catalog-rice-500@1x.png" srcset="img/catalog-rice-500@2x.png 2x"
+              width="68" height="86" alt="Рис 500 грамм">
           </picture>
           <div class="card__information">
             <h2 class="card__name">
@@ -244,9 +272,9 @@
               </dd>
             </dl>
           </div>
-          <button class="card__button" type="button">
+          <a class="card__button" type="button" href="#">
             Заказать
-          </button>
+          </a>
         </li>
         <li class="card card--add">
           <button class="card__button-add" type="button">
@@ -261,9 +289,9 @@
           <p class="card__content card__content--add">
             На самом деле вкусов гораздо больше!
           </p>
-          <button class="card__button card__button--all" type="button">
+          <a class="card__button card__button--all" type="button" href="#">
             Показать все
-          </button>
+          </a>
         </li>
       </ul>
     </section>
@@ -282,9 +310,9 @@
             <dd class="card__value card__value--additional">200 ₽
             </dd>
           </dl>
-          <button class="card__button card__button--additional" type="button">
+          <a class="card__button card__button--additional" type="button" href="#">
             Заказать
-          </button>
+          </a>
         </li>
         <li class="card card--additional">
           <h3 class="card__name card__name--additional">
@@ -296,9 +324,9 @@
             <dd class="card__value card__value--additional">50 ₽
             </dd>
           </dl>
-          <button class="card__button card__button--additional" type="button">
+          <a class="card__button card__button--additional" type="button" href="#">
             Заказать
-          </button>
+          </a>
         </li>
         <li class="card card--additional">
           <h3 class="card__name card__name--additional">
@@ -310,9 +338,9 @@
             <dd class="card__value card__value--additional">100 ₽
             </dd>
           </dl>
-          <button class="card__button card__button--additional" type="button">
+          <a class="card__button card__button--additional" type="button" href="#">
             Заказать
-          </button>
+          </a>
         </li>
         <li class="card card--additional">
           <h3 class="card__name card__name--additional">
@@ -324,15 +352,17 @@
             <dd class="card__value card__value--additional">300 ₽
             </dd>
           </dl>
-          <button class="card__button card__button--additional" type="button">
+          <a class="card__button card__button--additional" type="button" href="#">
             Заказать
-          </button>
+          </a>
         </li>
       </ul>
-      <div class="main-inner__box-present">
-        <p class="main-inner__box-present-content">
-          Закажите все и получите чехол для кота в подарок!
-        </p>
+      <div class="box-present">
+        <div class="box-present__image">
+          <p class="box-present__content">
+            Закажите все и получите чехол для кота в подарок!
+          </p>
+        </div>
       </div>
     </section>
 
