@@ -2,6 +2,7 @@
   .list-reset;
   padding: 23px 20px 34px;
   border: 0;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     padding: 0 70px 54px;
@@ -15,9 +16,18 @@
 
 .additionally__title {
   margin-bottom: 34px;
+  background-color: #ffffff;
+  z-index: 2;
+  width: 164px;
+  position: relative;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 57px;
+    width: 292px;
+    padding-left: 39px;
+    padding-right: 42px;
+    margin-left: -39px;
   }
 }
 
@@ -44,4 +54,30 @@
 
 .additionally__name {
   text-transform: uppercase;
+}
+
+.additionally::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: calc(100% - 20px);
+  background-color: #68b738;
+  top: 18%;
+  left: 0;
+  margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    top: 10%;
+    margin: 0;
+    width: 100vw;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 15%;
+    width: 100vw;
+    right: 0;
+    left: auto;
+    box-shadow: 100vw 0 0 0 #68b738;
+    display: block;
+  }
 }

@@ -1,9 +1,21 @@
+.catalog-container {
+  @media (min-width: @desktop-width) {
+    max-width: @desktop-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .catalog-container--additional {
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 4fr 1fr;
     gap: 80px;
     padding: 76px 110px;
+    max-width: @desktop-width;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
   }
 }
 

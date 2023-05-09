@@ -13,7 +13,7 @@
     border: none;
     background-color: #f2f2f2;
     position: relative;
-    padding: 161px 38px 38px;
+    padding: 161px 39px 39px;
   }
 }
 
@@ -22,6 +22,7 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
+    gap: 0;
     background-color: #ffffff;
     border: 2px solid #f2f2f2;
     padding: 52px 38px 38px;
@@ -88,17 +89,22 @@
   line-height: 20px;
   text-align: center;
   position: relative;
+  margin-top: 33px;
 }
 
-.card__button::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: #cdcdcd;
-  top: -50%;
-  left: 0;
+.card__line::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #cdcdcd;
+    top: -80%;
+    left: 0;
+    box-shadow: 0 -32px 0 0 #cdcdcd, 0 -64px 0 0 #cdcdcd;
+  }
 }
+
 
 .card__button--all {
   background: #f2f2f2;
@@ -111,6 +117,8 @@
 }
 
 .card__button--additional {
+  margin: 0;
+
   @media (min-width: @tablet-width) {
     width: 100%;
   }
@@ -149,6 +157,10 @@
 
 .card__name--add {
   width: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 134px;
+  }
 }
 
 .card__name--additional {
@@ -157,9 +169,10 @@
   border-top: 1px solid #cdcdcd;
 
   @media (min-width: @tablet-width) {
+    width: auto;
     text-align: start;
     border: none;
-    margin-right: auto;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -179,7 +192,7 @@
   @media (min-width: @tablet-width) {
     gap: 14px;
     margin-top: 21px;
-    margin-bottom: 33px;
+    margin-bottom: 9px;
   }
 }
 
@@ -243,6 +256,9 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 23px;
+    width: 165px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
