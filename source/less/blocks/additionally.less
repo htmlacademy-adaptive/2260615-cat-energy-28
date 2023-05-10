@@ -36,7 +36,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 20px;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -52,7 +52,15 @@
   }
 }
 
-.additionally__name {
+.additionally__wrapper {
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+
+
+.additionally__item-name {
+  padding-left: 46px;
   text-transform: uppercase;
 }
 
@@ -80,4 +88,56 @@
     box-shadow: 100vw 0 0 0 #68b738;
     display: block;
   }
+}
+
+.additionally__item-box {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.additionally__item-box::after {
+  display: none;
+  position: absolute;
+  content: "";
+  top: 28%;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/sprite.svg#mark");
+
+  @media (min-width: @tablet-width) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.additionally__item-value[type="checkbox"]:checked + .additionally__item-box::after {
+  display: block;
+}
+
+.additionally__wrapper:hover {
+  .additionally__item-box {
+    border-color: #bababa;
+  }
+}
+
+.additionally__wrapper:active {
+  opacity: 0.7;
+}
+
+.additionally__wrapper:disabled {
+  opacity: 0.3;
 }

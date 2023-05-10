@@ -20,12 +20,13 @@
 .card--add {
   grid-template-columns: 1fr;
   text-align: center;
+  padding: 78px 30px 25px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    gap: 0;
+    padding: 161px 37px 38px;
     background-color: #ffffff;
     border: 2px solid #f2f2f2;
-    padding: 52px 38px 38px;
   }
 }
 
@@ -240,14 +241,23 @@
 }
 
 .card__button-add {
-  width: 100%;
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
   border: none;
-  padding: 0;
-  background-color: #ffffff;
-  margin-bottom: 23px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+  top: 25px;
+  background-color: #d3d3d3;
+  mask-image: url("../img/sprite.svg#plus-1");
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 49px;
+    mask: url("../img/sprite.svg#plus-2");
+    width: 60px;
+    height: 60px;
+    top: 52px;
   }
 }
 
@@ -259,12 +269,5 @@
     width: 165px;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-.card__button-svg {
-  @media (min-width: @tablet-width) {
-    width: 60px;
-    height: 60px;
   }
 }
