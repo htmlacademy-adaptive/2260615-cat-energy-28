@@ -93,6 +93,20 @@
   margin-top: 33px;
 }
 
+.card__button:hover {
+  background-color: #5eaa2f;
+}
+
+.card__button:active {
+  .card__button-name {
+    opacity: 0.3;
+  }
+}
+
+.card__button:disabled {
+  opacity: 0.1;
+}
+
 .card__line::before {
   @media (min-width: @tablet-width) {
     content: "";
@@ -127,6 +141,20 @@
   @media (min-width: @desktop-width) {
     grid-column: span 1;
   }
+}
+
+.card__button--all:hover {
+  background-color: #ebebeb;
+}
+
+.card__button--all:active {
+  .card__button-name {
+    opacity: 0.3;
+  }
+}
+
+.card__button--all:disabled {
+  opacity: 0.1;
 }
 
 .card__information {

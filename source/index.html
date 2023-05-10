@@ -57,15 +57,15 @@
         Занялся собой? Займись котом!
       </p>
       <picture>
-        <source media="(min-width: 1440px)"
-          srcset="img/food-picture-desktop@1x.png 1x, img/food-picture-desktop@2x.png 2x" width="552" height="499">
-        <source media="(min-width: 768px)" srcset="img/food-picture-tablet@1x.png 1x, img/food-picture-tablet@2x.png 2x"
-          width="709" height="609">
-        <img class="promo__image" src="img/food-picture@1x.png" srcset="img/food-picture@2x.png 2x" width="280"
-          height="270" alt="фотография-пищи">
+        <source type="image/webp" media="(min-width: 1440px)" srcset="img/food-picture-desktop@1x.webp 1x, img/food-picture-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/food-picture-tablet@1x.webp 1x, img/food-picture-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/food-picture@1x.webp 1x, img/food-picture@2x.webp 2x">
+        <source media="(min-width: 1440px)" srcset="img/food-picture-desktop@1x.png 1x, img/food-picture-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/food-picture-tablet@1x.png 1x, img/food-picture-tablet@2x.png 2x">
+        <img class="promo__image" src="img/food-picture@1x.png" srcset="img/food-picture@2x.png 2x" alt="фотография-пищи">
       </picture>
       <a class="promo__button" type="button" href="#">
-        Подобрать программу
+       <span class="promo__button-name">Подобрать программу</span>
       </a>
     </section>
     <section class="recommendations">
@@ -154,7 +154,8 @@
           </p>
         </div>
         <p class="example__price">
-          Затраты на питание: 15 000 руб
+          Затраты на питание:
+          <span>15 000 руб</span>
         </p>
 
         <div class="example__slider">
