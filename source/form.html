@@ -11,16 +11,20 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="https://htmlacademy.ru/">
-      <img class="logo__icon" src="img/header-logo.svg" width="34" height="38" alt="Иконка кота">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="logo__icon" src="img/header-logo.svg" width="34" height="38" alt="Иконка кота">
+      </picture>
       <img class="logo__link" src="img/logo.svg" width="101" height="18" alt="Логотип">
     </a>
-    <nav class="main-nav main-nav--opened main-nav--nojs">
+    <nav class="main-nav main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">
           Открыть меню
         </span>
       </button>
-      <ul class="main-nav__list site-list">
+      <ul class="main-nav__list site-list site-list--index">
         <li class="site-list__item">
           <a class="site-list__item-link" href="index.html">
             Главная
@@ -32,13 +36,14 @@
           </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__item-link site-list__item-link--current" href="form.html">
+          <a class="site-list__item-link  site-list__item-link--current" href="#">
             Подбор программы
           </a>
         </li>
       </ul>
     </nav>
   </header>
+
 
   <main class="main-inner">
     <section class="form">
@@ -69,24 +74,27 @@
           </legend>
           <ul class="target__list">
             <li class="target__item">
-              <label class="target__item-box">
-                <input class="target__item-text" type="radio" name="target" value="weight-loss" checked>
+              <label class="target__wrapper">
+                <input class="target__item-value visually-hidden" type="radio" name="target" value="weight-loss" checked>
+                <span class="target__item-box"></span>
                 <span class="target__item-name">
                   Похудение
                 </span>
               </label>
             </li>
             <li class="target__item">
-              <label class="target__item-box">
-                <input class="target__item-text" type="radio" name="target" value="weight-gain">
+              <label class="target__wrapper">
+                <input class="target__item-value visually-hidden" type="radio" name="target" value="weight-gain">
+                <span class="target__item-box"></span>
                 <span class="target__item-name">
                   Набор массы
                 </span>
               </label>
             </li>
             <li class="target__item">
-              <label class="target__item-box">
-                <input class="target__item-text" type="radio" name="target" value="advice">
+              <label class="target__wrapper">
+                <input class="target__item-value visually-hidden" type="radio" name="target" value="advice">
+                <span class="target__item-box"></span>
                 <span class="target__item-name">
                   Не знаю (нужен ваш совет)
                 </span>
@@ -100,10 +108,10 @@
           </legend>
           <h2 class="form-selection__title contacts__title"> Контактные данные (владельца кота)
           </h2>
-          <label class="main-form__name contacts__box-name">E-mail:*
+          <label class="main-form__name contacts__box-name contacts__email">E-mail:*
             <input class="main-form__value" type="email" name="email" placeholder="kuklachev@gmail.com" required>
           </label>
-          <label class="main-form__name contacts__box-name">Телефон:*
+          <label class="main-form__name contacts__box-name contacts__phone">Телефон:*
             <input class="main-form__value" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
           </label>
         </fieldset>
@@ -126,30 +134,46 @@
           </h2>
           <ul class="additionally__list">
             <li class="additionally__item">
-              <label class="additionally__name">Сахарозаменитель
-                <input class="additionally__value" type="checkbox" name="additionally" value="sweetener" checked>
+              <label class="additionally__wrapper">
+                <input class="additionally__item-value visually-hidden" type="checkbox" name="additionally" value="sweetener" checked>
+                <span class="additionally__item-box"></span>
+                <span class="additionally__item-name">
+                  Сахарозаменитель
+                </span>
               </label>
             </li>
             <li class="additionally__item">
-              <label class="additionally__name">Питьевая вода
-                <input class="additionally__value" type="checkbox" value="drinking water" name="additionally">
+              <label class="additionally__wrapper">
+                <input class="additionally__item-value visually-hidden" type="checkbox" name="additionally" value="drinking water"  checked>
+                <span class="additionally__item-box"></span>
+                <span class="additionally__item-name">
+                  Питьевая вода
+                </span>
               </label>
             </li>
             <li class="additionally__item">
-              <label class="additionally__name">Молоко
-                <input class="additionally__value" type="checkbox" value="milk" name="additionally">
+              <label class="additionally__wrapper">
+                <input class="additionally__item-value visually-hidden" type="checkbox" name="additionally" value="milk">
+                <span class="additionally__item-box"></span>
+                <span class="additionally__item-name">
+                  Молоко
+                </span>
               </label>
             </li>
             <li class="additionally__item">
-              <label class="additionally__name">Витамины
-                <input class="additionally__value" type="checkbox" value="vitamins" name="additionally">
+              <label class="additionally__wrapper">
+                <input class="additionally__item-value visually-hidden" type="checkbox" name="additionally" value="vitamins">
+                <span class="additionally__item-box"></span>
+                <span class="additionally__item-name">
+                  Витамины
+                </span>
               </label>
             </li>
           </ul>
         </fieldset>
         <div class="button__form-wrapper">
           <button class="button button__form" type="submit">
-            Отправить заявку
+            <span class="button__form-name">Отправить заявку</span>
           </button>
           <p class="button__form-comment">
             * — Обязательные поля

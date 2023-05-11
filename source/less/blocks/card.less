@@ -13,18 +13,20 @@
     border: none;
     background-color: #f2f2f2;
     position: relative;
-    padding: 161px 38px 38px;
+    padding: 161px 39px 39px;
   }
 }
 
 .card--add {
   grid-template-columns: 1fr;
   text-align: center;
+  padding: 78px 30px 25px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
+    padding: 161px 37px 38px;
     background-color: #ffffff;
     border: 2px solid #f2f2f2;
-    padding: 52px 38px 38px;
   }
 }
 
@@ -77,6 +79,7 @@
 }
 
 .card__button {
+  .list-reset;
   .button-sample;
   box-sizing: border-box;
   grid-column: span 2;
@@ -85,7 +88,38 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
+  position: relative;
+  margin-top: 33px;
 }
+
+.card__button:hover {
+  background-color: #5eaa2f;
+}
+
+.card__button:active {
+  .card__button-name {
+    opacity: 0.3;
+  }
+}
+
+.card__button:disabled {
+  opacity: 0.1;
+}
+
+.card__line::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #cdcdcd;
+    top: -80%;
+    left: 0;
+    box-shadow: 0 -32px 0 0 #cdcdcd, 0 -64px 0 0 #cdcdcd;
+  }
+}
+
 
 .card__button--all {
   background: #f2f2f2;
@@ -98,6 +132,8 @@
 }
 
 .card__button--additional {
+  margin: 0;
+
   @media (min-width: @tablet-width) {
     width: 100%;
   }
@@ -105,6 +141,20 @@
   @media (min-width: @desktop-width) {
     grid-column: span 1;
   }
+}
+
+.card__button--all:hover {
+  background-color: #ebebeb;
+}
+
+.card__button--all:active {
+  .card__button-name {
+    opacity: 0.3;
+  }
+}
+
+.card__button--all:disabled {
+  opacity: 0.1;
 }
 
 .card__information {
@@ -122,21 +172,36 @@
   text-transform: uppercase;
   grid-column: span 2;
   color: #222222;
+  width: 76px;
 
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+    width: 155px;
+    margin: 0 auto;
+  }
+}
+
+.card__name--add {
+  width: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 134px;
   }
 }
 
 .card__name--additional {
+  width: 100%;
   padding-top: 13px;
   border-top: 1px solid #cdcdcd;
 
   @media (min-width: @tablet-width) {
+    width: auto;
+    text-align: start;
     border: none;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -156,7 +221,7 @@
   @media (min-width: @tablet-width) {
     gap: 14px;
     margin-top: 21px;
-    margin-bottom: 33px;
+    margin-bottom: 9px;
   }
 }
 
@@ -204,14 +269,23 @@
 }
 
 .card__button-add {
-  width: 100%;
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
   border: none;
-  padding: 0;
-  background-color: #ffffff;
-  margin-bottom: 23px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+  top: 25px;
+  background-color: #d3d3d3;
+  mask-image: url("../img/sprite.svg#plus-1");
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 49px;
+    mask: url("../img/sprite.svg#plus-2");
+    width: 60px;
+    height: 60px;
+    top: 52px;
   }
 }
 
@@ -220,12 +294,8 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 23px;
-  }
-}
-
-.card__button-svg {
-  @media (min-width: @tablet-width) {
-    width: 60px;
-    height: 60px;
+    width: 165px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
