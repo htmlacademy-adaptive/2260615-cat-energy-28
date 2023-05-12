@@ -76,36 +76,3 @@
 .contacts__box-name {
   position: relative;
 }
-
-.contacts__email::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  mask-image: url("../img/sprite.svg#letter");
-  background-color: #222222;
-  right: 15px;
-}
-
-.contacts__phone::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  mask-image: url("../img/sprite.svg#phone");
-  background-color: #222222;
-  right: 15px;
-}
-
-.contacts__box-name:focus-within::after {
-  background-color: #68b738;
-}
-
-.contacts__box-name:not(:placeholder-shown)::after {
-  background-color: #f80303;
-}
-
-
-.contacts__email::after:not(:placeholder-shown) {
-  background-color: #ff8282;
-}
