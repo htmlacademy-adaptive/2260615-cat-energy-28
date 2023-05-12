@@ -43,10 +43,39 @@
   font-size: 16px;
   line-height: 18px;
   padding: 11px 20px;
-  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.main-form__value:hover {
+  border-color: #cdcdcd;
+}
+
+
+.main-form__value:focus {
+  border-color: #444444;
+}
+
+.main-form__value:disabled {
+  opacity: 0.6;
+
+  .main-form__value::after {
+    background-color: #ff8282;
+  }
+}
+
+.main-form__value:not(:placeholder-shown) {
+  border-color: #ff8282;
+}
+
+.main-form__value-email:not(:placeholder-shown) ~ .contacts__email::after {
+  border-color: #ff8282;
+  background-color: #ff8282;
+}
+
+.main-form__value:not:placeholder-shown {
+  background-color: #ff8282;
 }
