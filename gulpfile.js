@@ -13,7 +13,6 @@ import {deleteAsync} from 'del';
 import svgo from 'gulp-svgo';
 import { stacksvg } from "gulp-stacksvg";
 
-
 // Styles
 
 export const styles = () => {
@@ -125,7 +124,6 @@ const server = (done) => {
     browser.reload();
     done();
   }
-
 
 // Watcher
 
