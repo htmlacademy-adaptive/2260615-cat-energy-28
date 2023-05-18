@@ -3,21 +3,22 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link href="./css/style.css" rel="stylesheet">
-  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link href="./css/style.min.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="apple-touch-icon" href="images/favicons/apple.png"><!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo" href="https://htmlacademy.ru/">
+    <a class="main-header__logo logo" href="index.html">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg" width="71" height="59">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="61" height="50">
         <img class="logo__icon" src="img/header-logo.svg" width="34" height="38" alt="Иконка кота">
       </picture>
       <img class="logo__link" src="img/logo.svg" width="101" height="18" alt="Логотип">
@@ -69,7 +70,7 @@
         <img class="promo__image" src="img/food-picture@1x.png" srcset="img/food-picture@2x.png 2x"
           alt="фотография-пищи">
       </picture>
-      <a class="promo__button" href="#">
+      <a class="promo__button" href="form.html">
         <span class="promo__button-name">Подобрать программу</span>
       </a>
     </section>
@@ -87,7 +88,7 @@
           Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Energy Slim поможет
           вашему питомцу сбросить лишний вес.
         </p>
-        <a class="recommendations__box-link" href="#">
+        <a class="recommendations__box-link" href="catalog.html">
           Каталог Slim
         </a>
       </div>
@@ -101,7 +102,7 @@
           Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
           необходимые мышцы!
         </p>
-        <a class="recommendations__box-link" href="#">
+        <a class="recommendations__box-link" href="catalog.html">
           Каталог Pro
         </a>
       </div>
@@ -167,6 +168,9 @@
         <div class="example__slider">
           <div class="example__slider-fat">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/fat-cat-tablet@1x.webp 1x, img/fat-cat-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/fat-cat@1x.webp 1x, img/fat-cat@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/fat-cat-tablet@1x.png 1x, img/fat-cat-tablet@2x.png 2x">
               <img class="example__slider-img" src="img/fat-cat@1x.png" srcset="img/fat-cat@2x.png 2x"
                 alt="Толстый-кот">
@@ -174,6 +178,9 @@
           </div>
           <div class="example__slider-thin">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/thin-cat-tablet@1x.webp 1x, img/thin-cat-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/thin-cat@1x.webp 1x, img/thin-cat@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/thin-cat-tablet@1x.png 1x, img/thin-cat-tablet@2x.png 2x">
               <img class="example__slider-img" src="img/thin-cat@1x.png" srcset="img/thin-cat@2x.png 2x"
                 alt="Худой-кот">
@@ -207,7 +214,7 @@
         width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <section class="page-footer__container">
-      <a class="page-footer__logo logo" href="https://htmlacademy.ru/">
+      <a class="page-footer__logo logo" href="index.html">
         <img class="logo__link" src="img/logo.svg" width="143" height="27" alt="Логотип">
       </a>
       <div class="page-footer__box">
@@ -220,7 +227,7 @@
               <span class="visually-hidden">
                 Вконтакте.
               </span>
-              <svg class="vk-icon" width="28" height="22">
+              <svg class="social-list__icon vk-icon" width="28" height="22">
                 <use href="img/sprite.svg#vk-icon"></use>
               </svg>
             </a>
@@ -230,7 +237,7 @@
               <span class="visually-hidden">
                 Ютуб.
               </span>
-              <svg class="youtube-icon" width="28" height="22">
+              <svg class="social-list__icon youtube-icon" width="28" height="22">
                 <use href="img/sprite.svg#youtube-icon"></use>
               </svg>
             </a>
@@ -240,7 +247,7 @@
               <span class="visually-hidden">
                 Телеграм.
               </span>
-              <svg class="telegram-icon" width="28" height="22">
+              <svg class="social-list__icon telegram-icon" width="28" height="22">
                 <use href="img/sprite.svg#telegram-icon"></use>
               </svg>
             </a>
@@ -248,7 +255,7 @@
         </ul>
       </div>
       <div class="page-footer__contacts">
-        <a class="page-footer__contacts-link" href="">
+        <a class="page-footer__contacts-link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="page-footer__contacts-link-name">
             HTML Academy
           </span>

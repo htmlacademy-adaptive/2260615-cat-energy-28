@@ -22,7 +22,7 @@
   position: absolute;
   content: "";
   background-image: url("../img/background-main@1x.png");
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: #64a83d;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -42,10 +42,10 @@
     display: block;
     background-image: url("../img/background-main-desktop@1x.png");
     background-size: cover;
-    width: 50%;
+    width: 50vw;
     height: 694px;
     top: -200px;
-    right: 0;
+    right: calc((100vw / -2) + 884px);
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background-main-desktop@2x.png");
@@ -117,6 +117,7 @@
 .promo__button {
   .list-reset;
   .button-sample;
+  padding: 10px 0;
   position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;

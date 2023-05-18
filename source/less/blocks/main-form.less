@@ -43,10 +43,57 @@
   font-size: 16px;
   line-height: 18px;
   padding: 11px 20px;
-  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.main-form__icon--email {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../img/sprite.svg#letter");
+  background-color: #222222;
+  right: 15px;
+}
+
+.main-form__icon--phone {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../img/sprite.svg#phone");
+  background-color: #222222;
+  right: 15px;
+}
+
+.main-form__value:hover:not(:disabled) {
+  border-color: #cdcdcd;
+}
+
+.main-form__value:focus {
+  border-color: #444444;
+}
+
+.main-form__value:invalid:not(.main-form__value--error) {
+  border-color: #ff8282;
+}
+
+.main-form__value:disabled {
+  opacity: 0.6;
+}
+
+.main-form__value:focus-within + .main-form__icon {
+  background-color: #68b738;
+}
+
+.main-form__value--error:not(:placeholder-shown) {
+  border-color: #ff8282;
+}
+
+.main-form__value--error:not(:placeholder-shown) + .main-form__icon {
+  background-color: #ff8282;
 }

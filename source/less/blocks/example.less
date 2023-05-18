@@ -239,27 +239,42 @@
   position: absolute;
   border: none;
   background-color: inherit;
-  top: 40%;
+  fill: #666666;
+  stroke: #666666;
+  top: 41%;
   z-index: 2;
+  cursor: pointer;
 }
 
-.example__slider::after {
+.example__button-slider::after {
   content: "";
-  mask-image: url("../img/sprite.svg#slider-line");
   background-color: #666666;
   position: absolute;
   width: 4px;
-  height: 100%;
-}
+  height: 256px;
+  bottom: -230%;
+  border-radius: 2px;
+  left: 22px;
+  z-index: -1;
 
-.example__button-slider:hover {
-  background-color: #68b738;
-
-  .example__slider::after {
-    background-color: #68b738;
+  @media (min-width: @tablet-width) {
+    height: 512px;
+    top: -215px;
   }
 }
 
-.vk-icon:hover {
+.example__button-slider:hover {
   fill: #68b738;
+  stroke: #68b738;
+}
+
+.example__button-slider:hover::after {
+  background-color: #68b738;
+}
+
+
+.example__button-slider:active {
+  fill: #5eaa2f;
+  stroke: #5eaa2f;
+  opacity: 0.6;
 }

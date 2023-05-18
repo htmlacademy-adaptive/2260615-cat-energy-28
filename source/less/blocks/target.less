@@ -27,6 +27,7 @@
 
 .target__item-name {
   padding-left: 45px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     padding-left: 60px;
@@ -39,9 +40,10 @@
   display: flex;
 }
 
-.target__item-box {
+.target__item-name::before {
   position: absolute;
   content: "";
+  top: -5px;
   left: 0;
   width: 30px;
   height: 30px;
@@ -57,12 +59,12 @@
   }
 }
 
-.target__item-box::after {
+.target__item-name::after {
   display: none;
   position: absolute;
   content: "";
-  top: 28%;
-  right: 28%;
+  top: 4px;
+  left: 10px;
   width: 13px;
   height: 13px;
   background-color: #68b738;
@@ -71,23 +73,27 @@
   @media (min-width: @tablet-width) {
     width: 18px;
     height: 18px;
+    top: 7px;
+    left: 13px;
   }
 }
 
-.target__item-value[type="radio"]:checked + .target__item-box::after {
+.target__item-value[type="radio"]:checked + .target__item-name::after {
   display: block;
 }
 
-.target__wrapper:hover {
-  .target__item-box {
-    border-color: #bababa;
-  }
+.target__item-value:not(:disabled) + .target__item-name:hover::before {
+  border-color: #bababa;
 }
 
-.target__wrapper:active {
+.target__wrapper:focus-within {
+  opacity: 0.8;
+}
+
+.target__item-value:active ~ .target__item-name {
   opacity: 0.7;
 }
 
-.target__wrapper:disabled {
+.target__item-value:disabled ~ .target__item-name {
   opacity: 0.3;
 }

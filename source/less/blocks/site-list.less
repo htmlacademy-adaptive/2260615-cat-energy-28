@@ -8,7 +8,7 @@
   @media (max-width: 766px) {
     z-index: 3;
     position: absolute;
-    top: 46px;
+    top: 58px;
     right: -20px;
     min-width: 320px;
     width: 100vw;
@@ -41,14 +41,21 @@
   color: #000000;
   position: relative;
   display: block;
-  padding: 22px;
-  font-size: 18px;
-  line-height: 24px;
+  padding: 21px 0 24px;
+  font-size: 20px;
+  line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+
+  @media (max-width: 766px) {
+    border-top: 1px solid #e6e6e6;
+  }
 
   @media (min-width: @tablet-width) {
     padding: 10px 0;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 

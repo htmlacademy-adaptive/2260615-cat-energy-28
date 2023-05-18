@@ -62,6 +62,11 @@
 .additionally__item-name {
   padding-left: 46px;
   text-transform: uppercase;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+  }
 }
 
 .additionally::after {
@@ -90,10 +95,11 @@
   }
 }
 
-.additionally__item-box {
+.additionally__item-name::before {
   position: absolute;
   content: "";
   left: 0;
+  top: -30%;
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
@@ -108,12 +114,12 @@
   }
 }
 
-.additionally__item-box::after {
+.additionally__item-name::after {
   display: none;
   position: absolute;
   content: "";
-  top: 28%;
-  right: 0;
+  top: 15%;
+  left: 5%;
   width: 24px;
   height: 24px;
   background-image: url("../img/sprite.svg#mark");
@@ -124,20 +130,22 @@
   }
 }
 
-.additionally__item-value[type="checkbox"]:checked + .additionally__item-box::after {
+.additionally__item-value[type="checkbox"]:checked + .additionally__item-name::after {
   display: block;
 }
 
-.additionally__wrapper:hover {
-  .additionally__item-box {
-    border-color: #bababa;
-  }
+.additionally__item-value:not(:disabled) + .additionally__item-name:hover::before {
+  border-color: #bababa;
 }
 
-.additionally__wrapper:active {
-  opacity: 0.7;
+.additionally__wrapper:focus-within {
+  opacity: 0.8;
 }
 
-.additionally__wrapper:disabled {
+.additionally__item-name:active ~ .additionally__item-name {
+  opacity: 0.4;
+}
+
+.additionally__item-value:disabled ~ .additionally__item-name {
   opacity: 0.3;
 }
