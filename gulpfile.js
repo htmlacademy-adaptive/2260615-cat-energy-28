@@ -9,7 +9,7 @@ import browser from 'browser-sync';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import htmlmin from 'gulp-htmlmin';
-import {deleteAsync} from 'del';
+import { deleteAsync } from 'del';
 import svgo from 'gulp-svgo';
 import { stacksvg } from "gulp-stacksvg";
 
@@ -32,61 +32,61 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
-  .pipe(htmlmin({ collapseWhitespace: true }))
-  .pipe(gulp.dest('build'));
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
 }
 
 //scripts
 
 const scripts = () => {
   return gulp.src('source/js/*.js')
-  .pipe(terser())
-  .pipe(gulp.dest('build/js'));
+    .pipe(terser())
+    .pipe(gulp.dest('build/js'));
 }
 
 //images
 
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-  .pipe(squoosh())
-  .pipe(gulp.dest('build/img'));
+    .pipe(squoosh())
+    .pipe(gulp.dest('build/img'));
 }
 
 const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-  .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img'));
 }
 
 //WebP
 
 const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-  .pipe(squoosh({
-    webp: {}
-  }))
-  .pipe(gulp.dest('build/img'));
+    .pipe(squoosh({
+      webp: {}
+    }))
+    .pipe(gulp.dest('build/img'));
 }
 
 //svg
 
 const svg = () => {
   return gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
-  .pipe(svgo())
-  .pipe(gulp.dest('build/img'));
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img'));
 }
 
 const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
-  .pipe(svgo())
-  .pipe(stacksvg({
-  }))
-  .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('build/img'));
+    .pipe(svgo())
+    .pipe(stacksvg({
+    }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'));
 }
 
 //copy
 
-const copy = (done) =>{
+const copy = (done) => {
   gulp.src([
     'source/fonts/**/*.{woff2, woff}',
     'source/*.ico',
@@ -94,7 +94,7 @@ const copy = (done) =>{
   ], {
     base: 'source'
   })
-  .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('build'))
   done();
 }
 
@@ -120,10 +120,10 @@ const server = (done) => {
 
 //reload
 
-  const reload = (done) => {
-    browser.reload();
-    done();
-  }
+const reload = (done) => {
+  browser.reload();
+  done();
+}
 
 // Watcher
 

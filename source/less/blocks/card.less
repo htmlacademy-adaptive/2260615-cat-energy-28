@@ -61,6 +61,8 @@
   padding: 14px 36px;
 
   @media (min-width: @tablet-width) {
+    width: 161px;
+    height: 172px;
     padding: 0;
     order: -1;
     position: absolute;
@@ -74,6 +76,8 @@
   padding: 11px 28px 1px;
 
   @media (min-width: @tablet-width) {
+    width: 168px;
+    height: 206px;
     padding: 0;
     top: 5%;
   }
@@ -250,7 +254,10 @@
 
 .card__value {
   text-align: right;
-  padding-bottom: 9px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 9px;
+  }
 }
 
 .card__content--additional {
@@ -268,7 +275,6 @@
     padding: 0;
   }
 }
-
 
 .card__button-add {
   position: absolute;
