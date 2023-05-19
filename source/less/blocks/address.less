@@ -3,9 +3,10 @@
 }
 
 .address__wrapper {
-  display: flex;
-  padding: 26px 20px;
-  gap: 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 25px 20px;
+  gap: 5px;
 
   @media (min-width: @tablet-width) {
     background-color: #f2f2f2;
@@ -20,8 +21,9 @@
     justify-content: flex-start;
     padding: 56px 80px 56px 60px;
     gap: 87px;
-    top: 95px;
-    left: 110px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 29%;
   }
 }
 
@@ -58,7 +60,30 @@
 }
 
 .address__map {
+  background-image: url("../img/map@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
   display: block;
   border: none;
   width: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map@2x.png");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/map-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/map-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.png");
+    }
+  }
 }
