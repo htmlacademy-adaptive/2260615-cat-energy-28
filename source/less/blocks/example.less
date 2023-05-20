@@ -40,7 +40,7 @@
     content: "";
     background-color: #f2f2f2;
     position: absolute;
-    height: 462px;
+    height: 471px;
     width: 100vw;
     bottom: 0;
     left: -50vw;
@@ -60,6 +60,7 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 42px;
   }
 
   @media (min-width: @desktop-width) {
@@ -74,7 +75,7 @@
     grid-column: span 2;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 54px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: @desktop-width) {
@@ -161,6 +162,8 @@
   margin: -5px;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-top: -5px;
     font-size: 20px;
     line-height: 20px;
     align-self: center;
@@ -175,6 +178,12 @@
     text-align: start;
     z-index: 2;
     margin-top: 35px;
+  }
+}
+
+.example__price-sum {
+  @media (min-width: @tablet-width) {
+    margin-top: 14px;
   }
 }
 
@@ -232,7 +241,6 @@
   margin-right: auto;
 
   @media (min-width: @tablet-width) {
-    gap: 42px;
     margin: 0;
   }
 }
@@ -246,6 +254,10 @@
   top: 41%;
   z-index: 2;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    top: 45%;
+  }
 }
 
 .example__button-slider::after {
@@ -256,12 +268,12 @@
   height: 256px;
   bottom: -230%;
   border-radius: 2px;
-  left: 22px;
+  left: 25px;
   z-index: -1;
 
   @media (min-width: @tablet-width) {
     height: 512px;
-    top: -215px;
+    top: -234px;
   }
 }
 

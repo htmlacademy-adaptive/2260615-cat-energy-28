@@ -31,11 +31,14 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
-    padding: 77px 54px 53px;
+    padding: 85px 54px 57px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 43px 61px 59px 52px;
+    width: 570px;
+    grid-template-columns: auto 1fr;
+    padding: 42px 63px 60px 51px;
+    gap: 0;
   }
 }
 
@@ -55,6 +58,11 @@
     grid-column: span 2;
     align-self: start;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-column: span 1;
+    align-self: center;
+  }
 }
 
 .recommendations__box-content {
@@ -69,11 +77,22 @@
     border: none;
     padding-bottom: 31px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+  }
 }
 
 .recommendations__box-content--sit {
   @media (min-width: @tablet-width) {
     margin-right: 37px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
   }
 }
 
@@ -108,6 +127,7 @@
   transform: translateY(-50%);
 
   @media (min-width: @tablet-width) {
+    width: 32px;
     margin-left: 25px;
     top: 35px;
   }
@@ -167,12 +187,23 @@
   @media (min-width: @desktop-width) {
     width: 134px;
     height: 106px;
-    padding-right: 47px;
+    padding-right: 46px;
+    margin: 0;
   }
 }
 
 .recommendations__box--stand {
   @media (min-width: @tablet-width) {
-    padding: 77px 28px 53px 54px;
+    padding: 77px 28px 57px 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 47px 65px 55px 33px;
+  }
+}
+
+.recommendations__box-content--stand {
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
