@@ -19,7 +19,6 @@
     grid-template-columns: 1fr 1fr;
     border-top: none;
     padding: 0;
-    padding-bottom: 75px;
     gap: 0 224px;
   }
 }
@@ -28,7 +27,7 @@
   position: relative;
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
+    padding: 0 110px 75px;
     max-width: @desktop-width;
     margin-left: auto;
     margin-right: auto;
@@ -45,6 +44,10 @@
     bottom: 0;
     left: -50vw;
     box-shadow: 100vw 0 0 0 #f2f2f2;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 77%;
   }
 }
 
@@ -64,7 +67,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 146px;
+    margin-bottom: 82px;
   }
 }
 
@@ -80,9 +83,9 @@
 
   @media (min-width: @desktop-width) {
     grid-column: span 1;
-    width: 436px;
+    width: 432px;
     z-index: 2;
-    margin-bottom: 69px;
+    margin: 0;
   }
 }
 
@@ -177,13 +180,18 @@
     gap: 63px;
     text-align: start;
     z-index: 2;
-    margin-top: 35px;
+    margin: 0;
+    margin-top: -10px;
   }
 }
 
 .example__price-sum {
   @media (min-width: @tablet-width) {
     margin-top: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 

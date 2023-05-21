@@ -11,7 +11,7 @@
   @media (min-width: @tablet-width) {
     background-color: #f2f2f2;
     justify-content: space-between;
-    padding: 50px 70px 61px;
+    padding: 60px 70px 46px;
     gap: 309px;
   }
 
@@ -20,12 +20,17 @@
     content: "";
     background-color: #ffffff;
     justify-content: flex-start;
-    padding: 56px 80px 56px 60px;
+    padding: 60px 80px 56px;
     gap: 87px;
     transform: translate(-50%, -50%);
     top: 50%;
-    left: 29%;
+    left: 27%;
+    box-sizing: border-box;
   }
+}
+
+.address__wrapper--index {
+  background-color: #ffffff;
 }
 
 .address__wrapper-title {
@@ -60,6 +65,16 @@
     text-align: end;
     margin-top: -5px;
   }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
+  }
+}
+
+.address__wrapper-content-sity {
+  @media (min-width: @tablet-width) {
+    line-height: 4;
+  }
 }
 
 .address__map {
@@ -72,11 +87,12 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/map@2x.png");
-    height: 400px;
+    height: 362px;
   }
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/map-tablet@1x.png");
+    height: 400px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/map-tablet@2x.png");

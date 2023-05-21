@@ -4,6 +4,7 @@
   gap: 20px;
   align-items: center;
   padding: 0 20px;
+  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
     gap: 30px;
@@ -31,7 +32,8 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
-    padding: 85px 54px 57px;
+    padding: 81px 54px 57px;
+    gap: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -88,11 +90,7 @@
 
 .recommendations__box-content--sit {
   @media (min-width: @tablet-width) {
-    margin-right: 37px;
-  }
-
-  @media (min-width: @tablet-width) {
-    margin-right: 0;
+    margin-right: 55px;
   }
 }
 
@@ -189,6 +187,7 @@
     height: 106px;
     padding-right: 46px;
     margin: 0;
+    margin-left: -18px;
   }
 }
 
@@ -198,12 +197,18 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 47px 65px 55px 33px;
+    padding: 42px 63px 60px 51px;
   }
 }
 
 .recommendations__box-content--stand {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-right: 23px;
+  }
+
   @media (min-width: @desktop-width) {
     margin: 0;
+    margin-top: 40px;
   }
 }
