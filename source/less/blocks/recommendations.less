@@ -13,11 +13,12 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    gap: 80px;
+    gap: 0;
     padding: 0 110px 71px;
     max-width: @desktop-width;
     margin-left: auto;
     margin-right: auto;
+    justify-content: space-between;
   }
 }
 
@@ -34,6 +35,7 @@
     grid-template-columns: 1fr 1fr;
     padding: 81px 54px 57px;
     gap: 0;
+    z-index: 1;
   }
 
   @media (min-width: @desktop-width) {
