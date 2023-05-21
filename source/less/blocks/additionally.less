@@ -136,11 +136,11 @@
   }
 }
 
-.additionally__item-value[type="checkbox"]:checked+.additionally__item-name::after {
+.additionally__item-value[type="checkbox"]:checked + .additionally__item-name::after {
   display: block;
 }
 
-.additionally__item-value:not(:disabled)+.additionally__item-name:hover::before {
+.additionally__item-value:not(:disabled) + .additionally__item-name:hover::before {
   border-color: #bababa;
 }
 
@@ -148,10 +148,10 @@
   opacity: 0.6;
 }
 
-.additionally__item-name:active~.additionally__item-name {
+.additionally__item-name:active ~ .additionally__item-name {
   opacity: 0.4;
 }
 
-.additionally__item-value:disabled~.additionally__item-name {
+.additionally__item-value:disabled ~ .additionally__item-name {
   opacity: 0.3;
 }
