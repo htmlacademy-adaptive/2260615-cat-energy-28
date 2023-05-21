@@ -14,6 +14,12 @@
   }
 }
 
+.additionally__item {
+  @media (min-width: @desktop-width) {
+    width: 20%;
+  }
+}
+
 .additionally__title {
   margin-bottom: 40px;
   background-color: #ffffff;
@@ -47,8 +53,8 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
+    column-gap: 80px;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 
@@ -118,8 +124,8 @@
   display: none;
   position: absolute;
   content: "";
-  top: 7px;
-  left: 9px;
+  top: 4px;
+  left: 7px;
   width: 24px;
   height: 24px;
   background-image: url("../img/sprite.svg#mark");
