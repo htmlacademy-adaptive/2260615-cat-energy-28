@@ -4,7 +4,7 @@
   row-gap: 20px;
   column-gap: 32px;
   background-color: #eaeaea;
-  padding: 25px 20px 40px;
+  padding: 25px 20px 31px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
@@ -19,7 +19,6 @@
     grid-template-columns: 1fr 1fr;
     border-top: none;
     padding: 0;
-    padding-bottom: 75px;
     gap: 0 224px;
   }
 }
@@ -28,7 +27,7 @@
   position: relative;
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
+    padding: 0 110px 75px;
     max-width: @desktop-width;
     margin-left: auto;
     margin-right: auto;
@@ -40,11 +39,15 @@
     content: "";
     background-color: #f2f2f2;
     position: absolute;
-    height: 462px;
+    height: 471px;
     width: 100vw;
     bottom: 0;
     left: -50vw;
     box-shadow: 100vw 0 0 0 #f2f2f2;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 77%;
   }
 }
 
@@ -60,10 +63,11 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 42px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 146px;
+    margin-bottom: 82px;
   }
 }
 
@@ -74,14 +78,14 @@
     grid-column: span 2;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 54px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: span 1;
-    width: 436px;
+    width: 432px;
     z-index: 2;
-    margin-bottom: 69px;
+    margin: 0;
   }
 }
 
@@ -133,7 +137,7 @@
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
-    top: 64px;
+    top: 65px;
     left: 32px;
     width: auto;
 
@@ -158,8 +162,11 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin: -5px;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-top: -5px;
     font-size: 20px;
     line-height: 20px;
     align-self: center;
@@ -173,7 +180,18 @@
     gap: 63px;
     text-align: start;
     z-index: 2;
-    margin-top: 35px;
+    margin: 0;
+    margin-top: -10px;
+  }
+}
+
+.example__price-sum {
+  @media (min-width: @tablet-width) {
+    margin-top: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
@@ -182,6 +200,7 @@
   position: relative;
   justify-content: center;
   z-index: 3;
+  margin: 5px 2px;
 
   @media (min-width: @tablet-width) {
     grid-column: span 2;
@@ -230,7 +249,6 @@
   margin-right: auto;
 
   @media (min-width: @tablet-width) {
-    gap: 42px;
     margin: 0;
   }
 }
@@ -244,6 +262,10 @@
   top: 41%;
   z-index: 2;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    top: 45%;
+  }
 }
 
 .example__button-slider::after {
@@ -254,12 +276,12 @@
   height: 256px;
   bottom: -230%;
   border-radius: 2px;
-  left: 22px;
+  left: 25px;
   z-index: -1;
 
   @media (min-width: @tablet-width) {
     height: 512px;
-    top: -215px;
+    top: -234px;
   }
 }
 

@@ -3,11 +3,12 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  padding: 20px;
+  padding: 0 20px;
+  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
     gap: 30px;
-    padding: 30px;
+    padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -23,18 +24,23 @@
 
 .recommendations__box {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 50px 1fr;
   box-sizing: border-box;
-  padding: 0 20px;
-  row-gap: 20px;
+  padding: 20px;
+  column-gap: 20px;
   background-color: #f2f2f2;
 
   @media (min-width: @tablet-width) {
-    padding: 77px 53px;
+    grid-template-columns: 1fr 1fr;
+    padding: 81px 54px 57px;
+    gap: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 43px 61px 59px 52px;
+    width: 570px;
+    grid-template-columns: auto 1fr;
+    padding: 42px 63px 60px 51px;
+    gap: 0;
   }
 }
 
@@ -48,28 +54,49 @@
   text-transform: uppercase;
   align-self: center;
 
-
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    grid-column: span 2;
+    align-self: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: span 1;
+    align-self: center;
   }
 }
 
 .recommendations__box-content {
   .list-reset;
   grid-column: span 2;
-  padding-bottom: 23px;
+  padding: 25px 0 20px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
     border: none;
+    padding-bottom: 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+  }
+}
+
+.recommendations__box-content--sit {
+  @media (min-width: @tablet-width) {
+    margin-right: 55px;
   }
 }
 
 .recommendations__box-link {
   .list-reset;
+  padding-top: 20px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -78,6 +105,7 @@
   text-transform: uppercase;
   color: #000000;
   position: relative;
+  grid-column: span 2;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -92,12 +120,14 @@
   width: 24px;
   height: 12px;
   position: absolute;
-  top: 50%;
+  top: 77%;
   margin-left: 15px;
   transform: translateY(-50%);
 
   @media (min-width: @tablet-width) {
+    width: 32px;
     margin-left: 25px;
+    top: 35px;
   }
 }
 
@@ -144,14 +174,41 @@
 }
 
 .recommendations__image--stand {
+  max-width: none;
+
   @media (min-width: @tablet-width) {
     width: 268px;
     height: 200px;
+    margin-top: 15px;
   }
 
   @media (min-width: @desktop-width) {
     width: 134px;
     height: 106px;
-    padding-right: 47px;
+    padding-right: 46px;
+    margin: 0;
+    margin-left: -18px;
+  }
+}
+
+.recommendations__box--stand {
+  @media (min-width: @tablet-width) {
+    padding: 77px 28px 57px 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 42px 63px 60px 51px;
+  }
+}
+
+.recommendations__box-content--stand {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-right: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-top: 40px;
   }
 }

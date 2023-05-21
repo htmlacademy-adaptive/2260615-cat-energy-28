@@ -6,50 +6,15 @@
   padding: 27px 20px 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 44px 118px 526px;
+    padding: 41px 118px 520px;
     align-items: flex-start;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 81px 190px 267px;
+    padding: 80px 190px 267px;
     max-width: @desktop-width;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-.promo::after {
-  position: absolute;
-  content: "";
-  background-image: url("../img/background-main@1x.png");
-  background-color: #64a83d;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 302px;
-  top: 0;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/background-main@2x.png");
-  }
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: block;
-    background-image: url("../img/background-main-desktop@1x.png");
-    background-size: cover;
-    width: 50vw;
-    height: 694px;
-    top: -200px;
-    right: calc((100vw / -2) + 884px);
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/background-main-desktop@2x.png");
-    }
   }
 }
 
@@ -91,7 +56,7 @@
     font-size: 20px;
     line-height: 20px;
     margin-top: 41px;
-    margin-bottom: 49px;
+    margin-bottom: 50px;
   }
 }
 
@@ -108,7 +73,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: 40%;
+    top: 39%;
     left: 58%;
     z-index: 2;
   }
@@ -130,8 +95,9 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 26px;
+    padding: 16px 26px;
     width: 244px;
+    box-sizing: border-box;
   }
 }
 

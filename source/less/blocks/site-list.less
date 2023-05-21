@@ -53,9 +53,15 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 10px 0;
+    padding: 15px 0 9px;
     font-size: 18px;
     line-height: 24px;
+
+    @media (min-width: @desktop-width) {
+      padding: 10px 0 6px;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
 
@@ -74,7 +80,6 @@
 .site-list__item:hover {
   opacity: 0.6;
 }
-
 
 .site-list__item:active {
   opacity: 0.3;

@@ -5,6 +5,7 @@
   border-top: 1px solid hsl(0, 0%, 92%);
   box-sizing: border-box;
   width: 100%;
+  height: 209px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -14,13 +15,14 @@
     background-color: #f2f2f2;
     position: relative;
     padding: 161px 39px 39px;
+    height: 100%;
   }
 }
 
 .card--add {
   grid-template-columns: 1fr;
   text-align: center;
-  padding: 78px 30px 25px;
+  padding-top: 78px;
   position: relative;
 
   @media (min-width: @tablet-width) {
@@ -33,13 +35,14 @@
 .card--additional {
   padding: 20px 20px 0;
   border: none;
+  height: auto;
 
   @media (min-width: @tablet-width) {
     width: auto;
-    padding: 26px 38px;
+    padding: 15px 38px 25px;
     border: 1px solid #cdcdcd;
     background-color: #ffffff;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
@@ -51,8 +54,8 @@
     grid-template-columns: repeat(3, 1fr);
     border: none;
     border-top: 1px solid #cdcdcd;
-    padding: 15px 0;
-    gap: 0;
+    padding: 7px 0 23px;
+    gap: 82px;
   }
 }
 
@@ -61,6 +64,8 @@
   padding: 14px 36px;
 
   @media (min-width: @tablet-width) {
+    width: 161px;
+    height: 172px;
     padding: 0;
     order: -1;
     position: absolute;
@@ -74,6 +79,8 @@
   padding: 11px 28px 1px;
 
   @media (min-width: @tablet-width) {
+    width: 168px;
+    height: 206px;
     padding: 0;
     top: 5%;
   }
@@ -91,10 +98,10 @@
   line-height: 20px;
   text-align: center;
   position: relative;
-  margin-top: 22px;
+  margin: auto 0;
 
   @media (min-width: @tablet-width) {
-    margin-top: 33px;
+    margin-top: 20px;
   }
 }
 
@@ -186,6 +193,7 @@
 .card__name--additional {
   width: 100%;
   border-top: 1px solid #cdcdcd;
+  padding-top: 8px;
 
   @media (min-width: @tablet-width) {
     width: auto;
@@ -196,7 +204,7 @@
 
   @media (min-width: @desktop-width) {
     grid-column: span 1;
-    margin-right: auto;
+    padding: 0;
   }
 }
 
@@ -204,10 +212,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column: span 2;
-  margin-top: 18px;
+  margin-top: 11px;
 
   @media (min-width: @tablet-width) {
-    row-gap: 14px;
+    row-gap: 5px;
     margin-top: 21px;
   }
 }
@@ -225,7 +233,6 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: auto 1fr;
-    margin-right: 40px;
     grid-column: span 1;
     gap: 0;
   }
@@ -248,9 +255,23 @@
   }
 }
 
+.card__content--additional,
+.card__value--additional {
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
 .card__value {
   text-align: right;
-  padding-bottom: 9px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 9px;
+  }
 }
 
 .card__content--additional {
@@ -267,14 +288,17 @@
     border: none;
     padding: 0;
   }
-}
 
+  @media (min-width: @desktop-width) {
+    margin-right: -40px;
+  }
+}
 
 .card__button-add {
   position: absolute;
   content: "";
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: none;
   left: 50%;
   right: 50%;
