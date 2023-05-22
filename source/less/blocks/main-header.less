@@ -32,5 +32,8 @@
 }
 
 .main-header:has(> .main-nav--nojs) {
-  flex-direction: column;
+  @media (max-width: @tablet-width) {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
 }
