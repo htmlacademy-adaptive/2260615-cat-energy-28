@@ -24,7 +24,7 @@
       </picture>
       <img class="logo__link" src="img/logo.svg" width="101" height="18" alt="Логотип">
     </a>
-    <nav class="main-nav main-nav main-nav--opened main-nav--nojs">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">
           Открыть меню
@@ -80,7 +80,7 @@
         Рекомендации
       </h2>
       <div class="recommendations__box">
-        <h3 class="recommendations__box-title recommendations__box--sit">
+        <h3 class="recommendations__box-title">
           Похудение
         </h3>
         <img class="recommendations__image recommendations__image--sit" src="img/cat-sit.svg" width="50" height="50"
@@ -94,7 +94,7 @@
         </a>
       </div>
       <div class="recommendations__box recommendations__box--stand">
-        <h3 class="recommendations__box-title recommendations__box--sit">
+        <h3 class="recommendations__box-title">
           Набор массы
         </h3>
         <img class="recommendations__image recommendations__image--stand" src="img/cat-stand.svg" width="67" height="50"
@@ -140,7 +140,7 @@
     </section>
 
     <section class="example">
-      <div class="example-wrapper">
+      <div class="example__wrapper">
         <h2 class="example__title">
           Живой пример
         </h2>
@@ -148,13 +148,13 @@
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
           изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="example__block-wrapper">
-          <p class="example__block example__block-weight">
+        <div class="example__block">
+          <p class="example__block-content example__block-weight">
             5 кг
             <span class="example__block-comment example__block-weight-comment">Снижение веса
             </span>
           </p>
-          <p class="example__block example__block-time">
+          <p class="example__block-content example__block-time">
             60 дней
             <span class="example__block-comment example__block-time-comment">Затрачено времени
             </span>
@@ -188,7 +188,7 @@
             </picture>
           </div>
           <button class="example__button-slider">
-            <svg class="example__button" width="40" height="40">
+            <svg width="40" height="40">
               <use href="img/sprite.svg#slider-button"></use>
             </svg>
           </button>

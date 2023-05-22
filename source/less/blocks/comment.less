@@ -42,7 +42,7 @@
   line-height: 18px;
   padding: 10px 12px;
   box-sizing: border-box;
-
+  resize: none;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -54,6 +54,15 @@
   @media (min-width: @desktop-width) {
     width: 100%;
   }
+}
+
+.comment__value:hover {
+  border-color: #cdcdcd;
+}
+
+.comment__value:focus-within {
+  outline: none;
+  border-color: #444444;
 }
 
 .comment::after {
