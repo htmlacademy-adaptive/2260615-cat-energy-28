@@ -30,3 +30,16 @@
     margin-right: auto;
   }
 }
+
+.main-header--nojs {
+  @media (max-width: @tablet-width) {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+}
+
+.main-header--nojs .main-header__logo {
+  @media (max-width: @tablet-width) {
+    margin-left: -90px;
+  }
+}
