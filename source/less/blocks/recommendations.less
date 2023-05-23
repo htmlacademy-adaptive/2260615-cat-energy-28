@@ -1,10 +1,9 @@
 .recommendations {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 20px;
   align-items: center;
   padding: 0 20px;
-  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
     gap: 30px;
@@ -12,8 +11,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
     gap: 0;
+    align-items: normal;
     padding: 0 110px 71px;
     max-width: @desktop-width;
     margin-left: auto;
@@ -65,7 +65,8 @@
 
   @media (min-width: @desktop-width) {
     grid-column: span 1;
-    align-self: center;
+    align-self: normal;
+    margin-top: 35px;
   }
 }
 
@@ -108,6 +109,7 @@
   color: #000000;
   position: relative;
   grid-column: span 2;
+  margin-top: auto;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -190,16 +192,6 @@
     padding-right: 46px;
     margin: 0;
     margin-left: -18px;
-  }
-}
-
-.recommendations__box--stand {
-  @media (min-width: @tablet-width) {
-    padding: 77px 28px 57px 54px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 42px 63px 60px 51px;
   }
 }
 
