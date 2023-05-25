@@ -24,7 +24,6 @@
     background-image: url("../img/box-present@2x.png");
   }
 
-
   @media (min-width: @tablet-width) {
     background-image: url("../img/box-present-tablet@1x.png");
     width: 707px;
@@ -55,11 +54,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  padding: 187px 60px 43px;
+  padding: 180px 59px 43px;
   box-sizing: border-box;
   text-align: center;
   position: relative;
-
 
   @media (min-width: @tablet-width) {
     padding: 71px 124px 69px 422px;
@@ -77,8 +75,13 @@
   position: absolute;
   width: 78px;
   height: 80px;
-  left: 80px;
-  top: 59px;
+  left: 105px;
+  top: 50px;
   z-index: 2;
   background-image: url("../img/sprite.svg#box-present");
+
+  @media (min-width: @tablet-width) {
+    top: 54px;
+    left: 78px;
+  }
 }
